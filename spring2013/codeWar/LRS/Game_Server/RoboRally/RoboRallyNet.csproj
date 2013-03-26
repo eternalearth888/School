@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C87E115-CD10-4E8D-B0D7-B56CB2656DE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RoboRallyNet</RootNamespace>
+    <AssemblyName>RoboRallyNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUG_MODE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avatars.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Avatars.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTimeout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientTimeout.Designer.cs">
+      <DependentUpon>ClientTimeout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FifoByteBuffer.cs" />
+    <Compile Include="Framework.cs" />
+    <Compile Include="GameSpeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameSpeed.Designer.cs">
+      <DependentUpon>GameSpeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="game_ai\PlayerTurn.cs" />
+    <Compile Include="game_ai\PlayerAI.cs" />
+    <Compile Include="game_ai\Utilities.cs" />
+    <Compile Include="game_engine\BoardLocation.cs" />
+    <Compile Include="game_engine\Card.cs" />
+    <Compile Include="game_engine\CombatUnit.cs" />
+    <Compile Include="game_engine\Conveyor.cs" />
+    <Compile Include="game_engine\Engine.cs" />
+    <Compile Include="game_engine\Explosion.cs" />
+    <Compile Include="game_engine\FlagState.cs" />
+    <Compile Include="game_engine\GameMap.cs" />
+    <Compile Include="game_engine\ISprite.cs" />
+    <Compile Include="game_engine\Laser.cs" />
+    <Compile Include="game_engine\MapSquare.cs" />
+    <Compile Include="game_engine\Robot.cs" />
+    <Compile Include="game_engine\Sprite.cs" />
+    <Compile Include="game_engine\Utilities.cs" />
+    <Compile Include="IEngineCallback.cs" />
+    <Compile Include="IUserDisplay.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapDisplay.Designer.cs">
+      <DependentUpon>MapDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="game_engine\Player.cs" />
+    <Compile Include="PlayerStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerStatus.Designer.cs">
+      <DependentUpon>PlayerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sprites.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Status.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Status.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TcpServer.cs" />
+    <Compile Include="Trap.cs" />
+    <EmbeddedResource Include="Avatars.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Avatars.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTimeout.resx">
+      <DependentUpon>ClientTimeout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameSpeed.resx">
+      <DependentUpon>GameSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapDisplay.resx">
+      <DependentUpon>MapDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerStatus.resx">
+      <DependentUpon>PlayerStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sprites.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sprites.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Status.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RoboRallyNet.exe.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\atom.ico" />
+    <None Include="Images\media_pause.png" />
+    <None Include="Images\media_play.png" />
+    <None Include="Images\media_stop_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bot-0.gif" />
+    <Content Include="Images\bot-1.gif" />
+    <Content Include="Images\bot-2.gif" />
+    <Content Include="Images\bot-3.gif" />
+    <Content Include="Images\bot-4.gif" />
+    <Content Include="Images\bot-5.gif" />
+    <Content Include="Images\bot-6.gif" />
+    <Content Include="Images\bot-7.gif" />
+    <Content Include="Images\bot-debug.gif" />
+    <Content Include="Images\bu.gif" />
+    <EmbeddedResource Include="Resources\laser_blue.wav" />
+    <EmbeddedResource Include="Resources\pit.wav" />
+    <None Include="Images\bu_grey.gif" />
+    <Content Include="Images\client_network.png" />
+    <Content Include="Images\cnv_1_east.gif" />
+    <Content Include="Images\cnv_1_east_south.gif" />
+    <Content Include="Images\cnv_2_east.gif" />
+    <Content Include="Images\cnv_2_east_south.gif" />
+    <Content Include="Images\empty-register.gif" />
+    <Content Include="Images\flag_blue.gif" />
+    <None Include="Images\m1_grey.gif" />
+    <None Include="Images\m2_grey.gif" />
+    <None Include="Images\m3_grey.gif" />
+    <None Include="Images\tl_grey.gif" />
+    <None Include="Images\tr_grey.gif" />
+    <None Include="Images\ut_grey.gif" />
+    <None Include="Images\forbidden.png" />
+    <None Include="Images\gear_add.png" />
+    <Content Include="Images\loudspeaker.png" />
+    <Content Include="Images\loudspeaker_preferences.png" />
+    <Content Include="Images\p01234.gif" />
+    <Content Include="Images\stopwatch.png" />
+    <Content Include="Images\user1_add.png" />
+    <Content Include="Images\user1_earth.png" />
+    <Content Include="Images\warning_grey.png" />
+    <None Include="Images\warning.png" />
+    <None Include="Images\flag_blue.png" />
+    <Content Include="Images\flag_green.gif" />
+    <Content Include="Images\flag_purple.gif" />
+    <None Include="Images\flag_yellow.png" />
+    <Content Include="Images\floor_flag.gif" />
+    <Content Include="Images\floor.gif" />
+    <Content Include="Images\laser.gif" />
+    <Content Include="Images\m1.gif" />
+    <Content Include="Images\m2.gif" />
+    <Content Include="Images\m3.gif" />
+    <Content Include="Images\rotate_counter.gif" />
+    <Content Include="Images\rotate_clock.gif" />
+    <Content Include="Images\repair.gif" />
+    <None Include="Images\star_green.png" />
+    <None Include="Images\star_red.png" />
+    <Content Include="Images\tl.gif" />
+    <Content Include="Images\tr.gif" />
+    <Content Include="Images\ut.gif" />
+    <Content Include="Images\wall.gif" />
+    <None Include="Images\avatar1.png" />
+    <Content Include="Images\avatar2.png" />
+    <Content Include="Images\avatar3.png" />
+    <Content Include="Images\avatar4.png" />
+    <Content Include="Images\Explosion1.png" />
+    <Content Include="Images\Explosion2.png" />
+    <Content Include="Images\Explosion3.png" />
+    <EmbeddedResource Include="Resources\Explosion.wav" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)$(TargetFileName).config" "$(TargetDir)" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

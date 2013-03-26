@@ -1,0 +1,5 @@
+C:\Downloads\LRS\Clients\PlayerCSharpAI\bin\Debug\PlayerCSharpAI.exe
+C:\Downloads\LRS\Clients\PlayerCSharpAI\bin\Debug\PlayerCSharpAI.pdb
+C:\Downloads\LRS\Clients\PlayerCSharpAI\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\LRS\Clients\PlayerCSharpAI\obj\Debug\PlayerCSharpAI.exe
+C:\Downloads\LRS\Clients\PlayerCSharpAI\obj\Debug\PlayerCSharpAI.pdb

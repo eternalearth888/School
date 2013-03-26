@@ -1,0 +1,84 @@
+<BLKCMT> ***********************************************************************
+ *  Test input file for HW03
+ */
+<BAD> #0D
+<NEWLINE>  
+<BAD> #0D
+<NEWLINE>  
+<ID> R0
+<ASSIGN> =
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R1
+<ASSIGN> =
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R2
+<ASSIGN> =
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R3
+<ASSIGN> =
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R4
+<ASSIGN> =
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R5
+<ASSIGN> =
+<BAD> E
+<SUB> -
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<ID> R7
+<ASSIGN> =
+<SUB> -
+<BAD> E
+<SEMI> ;
+<BAD> #0D
+<NEWLINE>  
+<BAD> #0D
+<NEWLINE>  
+<ID> R8
+<ASSIGN> =
+<ID> R1
+<ADD> +
+<SUB> -
+<SUB> -
+<ID> R3
+<BLKCMT> (R3+12)*/
+<ADD> +
+<ID> R3
+<SEMI> ;
+<BAD> #20
+<BAD> #0D
+<NEWLINE>  
+<ID> R9
+<ASSIGN> =
+<MUL> *
+<OPAREN> (
+<ADD> +
+<CPAREN> )
+<EXP> ^
+<ID> R5
+<SEMI> ;
+<BAD> #20
+<EOLCMT>  EOL comment
+<BAD> #0D
+<NEWLINE>  
+<ID> R1
+<ASSIGN> =
+<ADD> +
+<SUB> -
+<ADD> +
+<ID> R0
+<BAD> #20
+<EOLCMT>  BAD stuff
+<END> ÿ

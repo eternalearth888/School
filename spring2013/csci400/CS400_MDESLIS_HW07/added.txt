@@ -1,0 +1,39 @@
+/*
+ * Maria Deslis
+ * Bahn - spring2013 - csci400
+ * hw07, extra problem
+ *
+ */
+
+
+ADDED EXERCISE:
+====================================================
+HOWEVER, if you are shifting some of the task of identifying a complex number itself onto the parser, be sure to describe the parser rules that would be needed to work on your tokens to finish this off.
+
+You will probably discover that this task has been far more complicated than it looked at first glance. In fact, it is possible that you have been unable to come up with a workable solution. Describe why this task is more difficult than it first appears.
+
+Few, if any, languages that support complex numbers do so using the syntax you have been asked to work with. Choose a syntax -- and feel free to use the syntax of a language that intrinsically supports complex numbers -- that makes the task easier. Be sure to think about the complicating issues; for instance, if you choose to identify a complex number by requiring that it be surrounded by angle brackets, will this cause problems when your lexer tries to deal with relational operators?
+
+As before, you have the flexibility to partition the task between the lexer and the parser, but if you rely on the parser, describe the parser rules that would be needed.
+
+====================================================
+====================================================
+
+ANSWER:
+====================================================
+In order to determine that it is a valid complex number at the parser level, we would need 
+to validate that the syntax was following the rules of positive/negative real number followed 
+by an operator followed by positive/negative imaginary number.
+An example of a proper complex number is 4+5i.
+
+Any extra operator in between (ex 4+-5i) would tell us that we are adding a real number and imaginary number together.
+
+This is difficult in the sense that it would have to always do a look ahead for real numbers, thus 
+possibly slowing down the compiler.
+
+
+Assuming that real numbers are the most common numbers that the parser will be recieving and that
+imaginary numbers are less common, we can change the grammar of a complex number to make things 
+easier on the parser. For instance, instead of doing a look ahead for every real number we get,
+we can simply do a look ahead for every imaginary number we get. Thus we would change the syntax
+of a complex number to be pos/neg imaginary+operator+pos/neg real number (ex 5i+4).

@@ -1,0 +1,50 @@
+1.	Install Visual Studio 2010 (Professional version recomended).
+
+2.	Install the game server.
+
+3.	Extract PlayerCppAI from LastRobotStanding.zip.
+
+4.	The following instructions are for installing boost c++ libraries. Your 
+proctor may have already installed this on your system.
+Download the boost installer from http://www.boostpro.com/download/. 
+
+5.	Run the boost installer. you can either close Visual Studio before running 
+the installer, or restart Visual Studio after running the installer.
+
+6.	In the variants page, check Visual C++ 10.0 (Visual Studio 2010), and check 
+the multithreaded debug, static runtime variant.
+
+7.	In the components page, uncheck everything except for the following. Make 
+sure you set them to have the green check mark, otherwise you'll get build 
+errors.
+	•	Boost header files (required)
+	•	Boost DateTime
+	•	Boost Regex
+	•	Boost System
+	•	Boost Thread
+	•	Add to path
+
+8.	On the destination page, copy the destination folder path to a system 
+environment variable called BOOST_ROOT. The project is setup to use this 
+environment variable, so if you don't set it, you'll get build errors.
+The installer takes about 10-15 minutes, depending on your connection speed. 
+
+9.	In Visual Studio go to File, Open, Project/Solution and go to the directory 
+you extracted PlayerCppAI to. Open the file PlayerCppAI.sln.
+
+10.	Open the project properties and set the command line arguments. The 
+arguments are ip address of the server, your name, and your password.
+
+11.	Start the game server.
+
+12.	Run the client (CTRL+F5). You will get a command window that will print out 
+turns, etc. You should see your client connected in the server window.
+
+13.	Start a game on the server. You should see turns listed in the command 
+window. If you do, you are successfully configured.
+
+14.	One additional note: Sometimes Visual Studio produces incorrect IntelliSense
+errors when you're working with C/C++. You can disable the error reporting of 
+IntelliSense, which has no impact on build error reporting. Go to Tools > Text 
+Editor > C/C++ > Advanced. Under the IntelliSense section, set Disable Error 
+Reporting to True.

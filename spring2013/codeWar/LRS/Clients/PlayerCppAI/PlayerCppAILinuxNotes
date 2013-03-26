@@ -1,0 +1,54 @@
+1. Extract PlayerCppAI from RoboRallyNet.zip
+$ unzip RoboRallyNet.zip 'PlayerCppAI/*'
+
+_Steps 2-5 are for installing boost c++ libraries. Your proctor may have 
+already installed this on your system. If you have trouble, please consult the 
+official boost installation documentation at 
+www.boost.org/doc/libs/1_48_0/more/getting_started/unix-variants.html._
+
+2. Download boost tar.gz from 
+http://www.boost.org/users/history/version_1_48_0.html. It takes about 10 
+minutes. 
+
+3. Extract to /usr/local.
+$ sudo tar -xzvf boost_1_48_0.tar.gz -C /usr/local
+
+4. Run the following commands:
+$ cd /usr/local/boost_1_48_0
+$ sudo ./bootstrap.sh --with-libraries=system,thread
+$ sudo ./b2 install
+This will install the boost libraries to /usr/local/lib, and the header files 
+to /usr/local/include. Running ./b2 takes a few minutes. 
+
+5. Add /usr/local/lib to /etc/ld.so.conf, and then run ldconfig. Otherwise you'll
+get errors saying that the boost shared libraries can't be found when you try to
+run the program. Here's an example ld.so.conf.
+$ cat /etc/ld.so.conf
+include ld.so.conf.d/*.conf
+/usr/local/lib
+
+6. cd back to the PlayerCppAI directory and build the executable.
+$ make pcppai
+
+7. Start the game server.
+
+8. Run the client. The arguments are ip address of the server, your name, and 
+your password.
+$ ./pcppai 127.0.0.1 user password
+You should see your client connected in the server window.
+
+9.Start a game on the server. You should see turns listed in the client window.
+If you do, you are successfully configured. Here's an example run.
+$ ./pcppai 127.0.0.1 user password
+starting...
+enter "exit" to exit program
+Starting robot at: [5,15] - 0turn 1 request starting
+Turn: 1 - Turn: Cards[2:740, 4:430, 4:510, 1:970, 5:660]
+turn 1 replying (after sleep)
+turn 2 request starting
+Turn: 2 - Turn: Cards[2:720, 1:640, 1:470, 5:670, 4:310]
+turn 2 replying (after sleep)
+Starting robot at: [5,15] - 0turn 3 request starting
+Turn: 3 - Turn: Cards[6:270, 6:770, 5:930, 1:170, 1:800]
+turn 3 replying (after sleep)
+

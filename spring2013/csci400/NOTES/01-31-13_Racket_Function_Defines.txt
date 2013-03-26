@@ -1,0 +1,33 @@
+//if else statement
+(if predicate if_true if_false)
+
+
+//similar to switch statement or nested if statements 
+(cond ()()()())
+	ex) (define a 15)
+	    (cond [(< a 20) (display "Less than 20")] [(= a 5) (display "Equals 5")] [else (display "Something Else")] ) //"else" is similar to default
+
+
+//lambda function, passing value
+((lambda (a) (cond ()()()())) value)
+	ex) { [lambda (a) (cond [(< a 20) (display "Less than 20")] [(= a 5) (display "Equals 5")] [else (display "Something Else")] ) ] 27}
+
+
+//defining a function
+(define name
+   (lambda (a) (cond ()()()())))
+(name value)
+	ex) {define bob
+		[lambda (a) (cond [(< a 20) (display "Less than 20")] [(= a 5) (display "Equals 5")] [else (display "Something Else")] ) ] }
+	    (bob 27)
+
+
+//shortcut to define function
+(define (name a) (cond ()()()()))
+(name value)
+	ex) {define (bob a) (cond [(< a 20) (display "Less than 20")] [(= a 5) (display "Equals 5")] [else (display "Something Else")] ) }
+	    (bob 27)
+
+
+//example
+(define (hanoi-moves n) (if (= n 0) 0 (+ 1 (* 2 (hanoi-moves (- n 1))))))

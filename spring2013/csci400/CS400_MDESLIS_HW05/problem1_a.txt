@@ -1,0 +1,38 @@
+<program>		->	main { <stmts> }
+
+<stmts>			->	<stmt>;
+				->	<stmt>; <stmts>
+				-> 	<loops>
+
+<stmt>			->	<var> = <expr>
+
+<expr>			->	<term> + <term>
+				->	<term> - <term>
+				-> 	<term> % <term>
+				-> 	<term> * <term>
+				->	<term> / <term>
+				->	<term>
+
+<term>			->	<var> |	const
+
+<var>			->	a | b | c |d
+
+<loops>			->	<while loop> | <for loop>
+
+<while loop>	->	while ( <condition> ) { <stmts> }
+
+<condtion>		->	<condition> || <condition>
+				->	<condition> && <condition>
+				->	<condition> < <condition>
+				->	<condition> > <condition>
+				->	<condition> <= <condition>
+				->	<condition> >= <condition>
+				->	<condition> == <condtion>
+				->	<condition> != <condition>
+				->	!<condition>			
+				->	<condition>
+				->	<expr>
+
+<for loop>		->	for ( <stmt>; <condition>; <stmt> ) { <stmts> }
+				->	for ( <stmt>; <condition>; ; ) <stmts>
+				->	for ( ; <condition>; <stmt>) <stmts>

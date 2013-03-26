@@ -1,0 +1,15 @@
+Lexer : is it a valid word
+Token : what type of word is it (ex: noun, verb, adjective, etc.)
+Parser: reads sentence, and determines if it is a valid sentence
+Lexeme: the actual word (ex, dog)
+Symbol: a terminal in a grammar (ex a vs A)
+Alphabet : The set of all ASCII codes that could be present in a program’s source code file.
+Sentence : a grammatically correct series of tokens
+Pushdown Automaton: 
+Finite Automoaton: For any given start state, there is only a finite number of places you can go
+			*EVERYTHING IN CS IS A FINITE AUTOMATON EXCEPT FOR BALANCING PARANTHESIS*
+			THINK: Can I write a regex for it? If yes, then it is FA, else FALSE
+Context Free Grammar : Grammar that doesn't give a shit
+Regular Grammar : 
+Production Rule : Defines the options that may be used to replace each non-terminal grammar
+Regular Expression : A finite state machine that parses strings and determines a match

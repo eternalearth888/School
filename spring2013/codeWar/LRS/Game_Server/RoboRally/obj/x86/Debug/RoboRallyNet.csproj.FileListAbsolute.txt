@@ -1,0 +1,16 @@
+C:\Downloads\LRS\Game_Server\RoboRally\bin\Debug\RoboRallyNet.exe
+C:\Downloads\LRS\Game_Server\RoboRally\bin\Debug\RoboRallyNet.pdb
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.Avatars.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.ClientTimeout.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.GameSpeed.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.MainWindow.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.MapDisplay.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.PlayerStatus.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.Properties.Resources.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.Sprites.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.Status.resources
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.exe
+C:\Downloads\LRS\Game_Server\RoboRally\obj\x86\Debug\RoboRallyNet.pdb

@@ -1,0 +1,11 @@
+What the answers should be:
+
+For input1copy.txt
+
+You only run the Nearest Neighbor (so comment out Exhaustive in main)
+and the distance should be 626.231
+
+For input2copy.txt
+
+Nearest Neighor Distance : 117.082
+Exhaustive Search: 104.721

@@ -1,0 +1,24 @@
+FIRST SETS:
+
+S	-> 		ASE 	|       CC	| BCS
+		    (b,i,j,f,g) |    (d,e,h)	| (a,c,k)
+
+A	-> 		bEC	|      Da	| gB	
+			(b) 	|    (i,j,f)	| (g)
+
+B	-> 		aDE	|      cD	| kAB
+			(a) 	|      (c) 	| (k)
+
+C	-> 		dEa	|      eS	| hf
+			(d) 	|      (e) 	| (h)
+
+D	->		iB	|      jkC	| fsK
+			(i) 	|      (j) 	| (f)
+
+E	-> 		CS	|	Aa	| cb
+		      (d,e,h)   | (b,i,j,f,g)   | (c)
+
+
+===================================================================
+PAIRWISE DISJOINTS:
+S,A,B,C,D,E

@@ -1,0 +1,33 @@
+Definitions
+
+Problem + Context
+
+History -> RDBMS -> "Relational"
+
+Data Model Schemas
+
+ER Model, ERD
+
+Relational
+
+Implementation
+	-SQLITE
+	-SQL {DDL, DML}
+
+Normalization
+	-A normalized table does not necessarily mean a good design
+	-Schema Design + Normalization
+
+ACID
+
+Transactions
+
+Locks
+
+Programming + APIs
+
+=========================
+STRUCTURES OF EXAM
+
+-History of Relational DB
+

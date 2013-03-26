@@ -1,0 +1,86 @@
+----------	
+Program 1:
+----------	
+
+<program>	->	main { <stmts> }
+			->	main { <stmt>; <stmts> }
+			->	main { <var> = <expr>; <stmts> }
+			->	main { a = <expr>; <stmts> }
+			->	main { a = <term>; <stmts> }
+			->	main { a = const; <stmts> }
+			->	main { a = const; <stmt>; <stmts> }
+			->	main { a = const; <var> = <expr>; <stmts> }
+			->	main { a = const; b = <expr>; <stmts> }
+			->	main { a = const; b = <term>; <stmts> }
+			->	main { a = const; b = const; <stmts> }
+			->	main { a = const; b = const; <loop> }
+			->	main { a = const; b = const; <while loop> }
+			->	main { a = const; b = const; while ( <condition> ) { <stmts> } }
+			->	main { a = const; b = const; while ( <condition> < <condition> ) { <stmts> } }
+			-> 	main { a = const; b = const; while ( <expr> < <condition> ){ <stmts> } }
+			->	main { a = const; b = const; while ( <term> < <condition> ){ <stmts> } }
+			->	main { a = const; b = const; while ( <var> < <condition> ) { <stmts> } }
+			->	main { a = const; b = const; while ( a < <condition> ) { <stmts> } }
+			->	main { a = const; b = const; while ( a < <expr> ) { <stmts> } }
+			->	main { a = const; b = const; while ( a < <term> ) { <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { <stmt>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { <var> = <expr>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = <expr>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = <term> + <term>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = <var> + <term>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + <term>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + <var>; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; <stmts> } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; <stmt>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; <var> = <expr>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; a = <expr>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; a = <term> - <term>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; a = <var> - <term>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; a = a - <term>; } }
+			->	main { a = const; b = const; while ( a < const )  { b = b + a; a = a - const; } }			
+	
+----------			
+Program 2:
+----------
+<program>	-> main { <stmts> }
+			-> main { <stmt>; <stmts> }
+			-> main { <var> = <expr>; <stmts> }
+			-> main { a = <expr>; <stmts> }
+			-> main { a = <term>; <stmts> }
+			-> main { a = const; <stmts> }
+			-> main { a = const; <stmt>; <stmts> }
+			-> main { a = const; <var> = <expr>; <stmts> }
+			-> main { a = const; b = <expr>; <stmts> }
+			-> main { a = const; b = <term> ; <stmts> }
+			-> main { a = const; b = const; <stmts> }
+			-> main { a = const; b = const; <loops> }
+			-> main { a = const; b = const; <for loop> }
+			-> main { a = const; b = const; for ( <stmt>; <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( <var> = <expr>; <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = <expr>; <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = <term>; <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; <condition> < <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; <expr> < <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; <term> < <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; <var> < <condition>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < <condition>; <stmt>) { <stmts> } } 
+			-> main { a = const; b = const; for ( a = const; a < <expr>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < <term>; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; <stmt>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; <var> = <expr>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = <expr>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = <term> - <term>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = <var> - <term>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - <term>) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { <stmts> } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { <stmt>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { <var> = <expr>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = <expr>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = <term> + <term>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = <var> + <term>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = b + <term>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = b + <var>; } }
+			-> main { a = const; b = const; for ( a = const; a < const; a = a - const) { b = b + a; } }
+

@@ -1,0 +1,17 @@
+<program>	->	main { <stmts> }
+			->	main { <stmt> }
+			->	main { if <expr> then <stmt> }
+			->  main { if Expr1 then <stmt> }
+			->	main { if Expr1 then if <expr> then <stmt> else <stmt> }
+			->	main { if Expr1 then if Expr2 then <stmt> else <stmt> }
+			->	main { if Expr1 then if Expr2 then Stmt1 else <stmt> }
+			->	main { if Expr1 then if Expr2 then Stmt1 else Stmt2 }
+		
+<program> 	-> main { <stmts> }
+			-> main { <stmt> }
+			-> main { if <expr> then <stmt> else <stmt> }
+			-> main { if Expr1 then <stmt> else <stmt> }
+			-> main { if Expr1 then if <expr> then <stmt> else <stmt> }
+			-> main { if Expr1 then if Expr2 then <stmt> else <stmt> }
+			-> main { if Expr1 then if Expr2 then Stmt1 else <stmt> }
+			-> main { if Expr1 then if Expr2 then Stmt1 else Stmt2 }

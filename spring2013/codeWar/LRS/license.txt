@@ -1,0 +1,14 @@
+For all the code there is no license - you can do whatever you want with it. If 
+you like it, we ask that you say something nice about Windward with a link to 
+www.windward.net.
+
+The art that is game specific came from the open source project 
+http://robotournament.sourceforge.net. It has a GPL license but I'm not sure
+how that applies to art as it discusses code. So no idea what restrictions
+there are on it but probably GPL.
+
+The general art came from www.iconexperience.com and you must buy their icons
+to use them in anything else. They have really good icons and their prices are
+reasonable so do purchase if you want to use their stuff.
+
+thanks - dave
