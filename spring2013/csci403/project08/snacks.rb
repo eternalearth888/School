@@ -4,9 +4,10 @@ require 'rubygems'
 require 'active_record'
 require 'logger'
 #
-# 
+# Maria Deslis
+# csci403 - Bakos - spring 2013
 #
-#ActiveRecord::Base.logger = Logger.new(STDOUT) # Comment this line to turn off log output
+# ActiveRecord::Base.logger = Logger.new(STDOUT) # Comment this line to turn off log output
 
 ActiveRecord::Base.establish_connection(
   :host => 'csci403.c99q7trvwetr.us-west-2.rds.amazonaws.com',
@@ -20,8 +21,9 @@ ActiveRecord::Base.establish_connection(
 # Class definitions
 #
 class User < ActiveRecord::Base
+  has_and_belongs_to_many :snacks
   def to_s
-    "#{name}"
+    name
   end
 end
 
@@ -29,7 +31,7 @@ end
 class Building < ActiveRecord::Base
   has_many :machines
   def to_s
-    "#{name}"
+    name
   end
 end
 
@@ -37,33 +39,17 @@ class Machine < ActiveRecord::Base
   belongs_to :building #foreign key - building_id
   has_and_belongs_to_many :snacks
   def to_s
-    "#{serial_number}"
+    serial_number    
   end
 end
 
 class Snack < ActiveRecord::Base
+  has_and_belongs_to_many :users
   has_and_belongs_to_many :machines
   def to_s
-    "#{name}"
+    name
   end
 end
-
-class CreateFavorites < ActiveRecord::Migration
-  def up
-    create_table :favorites do |field|
-      # implicit id column that is primary key
-      field.string :name, :null => false
-      field.text :description
-      field.string :rating => 5
-    end
-  end
-
-  #get rid of it when the user exits
-  def down
-    drop_table :favorites
-  end
-end
-
 #
 # Core functions.
 #
@@ -105,10 +91,9 @@ end
 
 #E - Find a Snack
 def find_snack
-  puts "Candy from the trolley dear?"
-  user_search = gets.chomp
+  user_search = ""
 
-  if (user_search.empty?)
+  while (user_search.empty?)
     puts "Candy from the trolley dear?"
     user_search = gets.chomp
   end
@@ -120,7 +105,7 @@ def search_snack(user_search)
   snack = Snack.find_by_name(user_search)
 
   unless snack
-    puts "Sorry, the Death Eaters ate them all"
+    puts "Sorry, the Death Eaters ate them all."
   else
     snack.machines.each do |machine|
         puts "- #{machine.serial_number} in #{machine.building.name} Building"
@@ -130,26 +115,21 @@ end
 
 #F - Add a Snack
 def add_snack
-  puts "What concotion are you brewing?"
-  add_name = gets.chomp
+  add_name = ""
+  add_descrip = ""
+  add_cal = ""
 
-  if (add_name.empty?) 
+  while (add_name.empty?) 
     puts "What concotion are you brewing?"
     add_name = gets.chomp
   end
 
-  puts "How would you describe it?"
-  add_descrip = gets.chomp
-
-  if (add_descrip.empty?)
+  while (add_descrip.empty?)
     puts "How would you describe it?"
     add_descrip = gets.chomp
   end
 
-  puts "How many calories does it have?"
-  add_cal = gets.chomp
-
-  if (add_cal.to_i < 0 || add_cal.empty?)
+  while (add_cal.to_i < 0 || add_cal.empty?)
     puts "How many calories does it have?"
     add_cal = gets.chomp
   end
@@ -158,11 +138,9 @@ def add_snack
 end
 
 def add_machine(add_name, add_descrip, add_cal)
-  puts "Choose a home for #{add_name}:"
-  list_machines
-  pick_machine = gets.chomp
+  pick_machine = ""
 
-  if (pick_machine.empty?)
+  while (pick_machine.empty?)
     puts "Choose a home for #{add_name}:"
     list_machines
     pick_machine = gets.chomp
@@ -184,26 +162,21 @@ end
 
 #G - Add a User
 def add_user
-  puts "Please input your name:"
-  user_name = gets.chomp
+  user_name = ""
+  user_un = ""
+  user_pass = ""
 
-  if (user_name.empty?) 
+  while (user_name.empty?) 
     puts "Please input your name:"
     user_name = gets.chomp
   end
 
-  puts "Please input user name:"
-  user_un = gets.chomp
-
-  if (user_un.empty?)
+  while (user_un.empty?)
     puts "Please input user name:"
     user_un = gets.chomp
   end
 
-  puts "Please input user password:"
-  user_pass = gets.chomp
-
-  if (user_pass.empty?)
+  while (user_pass.empty?)
     puts "Please input user password:"
     user_pass = gets.chomp
   end
@@ -211,37 +184,72 @@ def add_user
   users = User.create(:name => user_name,:username => user_un, :password => user_pass)
 end
 
-#H - Favorites Snacks
-# def fav_snacks
-#   snacks = Snack.all
+#H - List Favorites Snacks
+def list_fav
+  users = User.all 
+  users.each do |user|
+    puts "#{user}"
+    user.snacks.each do |snack|
+      puts "- #{snack}"
+    end
+  end
+end
 
-#   puts "Tell us your favorite snack:"
-#   pick_snack = gets.chomp
+#I - Find Favorites
+def find_fav
+  fav_search = ""
 
-#   if (pick_snack.empty?)
-#     puts "Choose a favorite snack by typing it:"
-#     list_snacks
-#     pick_snack = gets.chomp
-#   end
+  while (fav_search.empty?)
+    puts "Whom are you looking for?"
+    fav_search = gets.chomp
+  end
 
-#   puts "Rating #{pick_snack} (up to five *):"
-#   rating = gets.chomp
+  search_fav(fav_search)
+end
 
-#   if (rating.empty?)
-#     puts "Rating #{pick_snack} (up to five *):"
-#     rating = gets.chomp
-#   end
+def search_fav(fav_search)
+  user = User.find_by_name(fav_search)
 
-#   favorites.rating << rating
+  unless user
+    puts "This person does not exist in the database"
+  else
+    user.snacks.each do |snack|
+      puts "- #{snack.name}, #{snack.description}"
+    end
+  end
+end
 
-#   snacks.each do |snack|
-#     if (snack.name == pick_snack)
-#       favorites.name << snack
-#     end
-#   end
-# end
+# J - Add Favorites
+def add_fav
+  fav_add = ""
 
+  while (fav_add.empty?)
+    puts "Pick your favorite brew:"
+    list_snacks
+    fav_add = gets.chomp
+  end
 
+  fav_user(fav_add)
+end
+
+def fav_user(fav_snack)
+  pick_user = ""
+
+  while (pick_user.empty?)
+    puts "Choose witch/wizard:"
+    list_users
+    pick_user = gets.chomp
+  end
+
+  final_fav(fav_snack, pick_user)
+end
+
+def final_fav(fav_snack, chosen_user)
+  snack = Snack.find_by_name(fav_snack)
+  user = User.find_by_name(chosen_user)
+
+  user.snacks << snack
+end
 
 # TODO: Your other menu-driven functions should be placed here.
 
@@ -254,7 +262,9 @@ def main_menu
   puts "E. Find a Snack"
   puts "F. Add a New Snack"
   puts "G. Create New User"
-  # puts "H. Create Favorites"
+  puts "H. List Favorites"
+  puts "I. Find Favorites"
+  puts "J. Add Favorites"
   puts "Q. Quit"
 end
 
@@ -281,9 +291,15 @@ def execute_command(command)
   when "G", "g"
     puts "\nCreating a new User:"
     add_user
-  # when "H", "h"
-  #   puts "\nFavorites:"
-  #   fav_snacks
+  when "H", "h"
+    puts "\nListing Favorites:"
+    list_fav
+  when "I", "i"
+    puts "\nFind Favorites:"
+    find_fav
+  when "J", "j"
+    puts "\nAdding a Favorite:"
+    add_fav
   when "Q"
     puts "Exiting..."
   else
