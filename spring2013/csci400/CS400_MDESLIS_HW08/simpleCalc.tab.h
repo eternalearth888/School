@@ -51,7 +51,7 @@ typedef union YYSTYPE
 {
 
 /* Line 2068 of yacc.c  */
-#line 1 "simpleCalc.y"
+#line 8 "simpleCalc.y"
  /*typedef this to YYSTYPE*/
 int i;
 float f;

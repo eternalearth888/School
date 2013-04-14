@@ -1,3 +1,10 @@
+/*
+Maria Deslis
+csci400 - Bahn
+spring 2013
+hw08 flex/bison
+*/
+
 %union{ /*typedef this to YYSTYPE*/
 int i;
 float f;

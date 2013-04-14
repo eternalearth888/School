@@ -108,7 +108,7 @@ typedef union YYSTYPE
 {
 
 /* Line 293 of yacc.c  */
-#line 1 "simpleCalc.y"
+#line 8 "simpleCalc.y"
  /*typedef this to YYSTYPE*/
 int i;
 float f;
@@ -128,7 +128,7 @@ char *s;
 /* Copy the second part of user declarations.  */
 
 /* Line 343 of yacc.c  */
-#line 18 "simpleCalc.y"
+#line 25 "simpleCalc.y"
  
 #include <stdlib.h>
 #include <stdio.h>
@@ -439,9 +439,9 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    35,    35,    36,    37,    38,    41,    43,    45,    46,
-      49,    50,    51,    52,    53,    56,    57,    58,    61,    62,
-      63,    64,    67,    68
+       0,    42,    42,    43,    44,    45,    48,    50,    52,    53,
+      56,    57,    58,    59,    60,    63,    64,    65,    68,    69,
+      70,    71,    74,    75
 };
 #endif
 
@@ -1392,84 +1392,84 @@ yyreduce:
         case 10:
 
 /* Line 1806 of yacc.c  */
-#line 49 "simpleCalc.y"
+#line 56 "simpleCalc.y"
     { printf("%s = %f\n", (yyvsp[(1) - (5)].s), (yyvsp[(3) - (5)].f)); assignRegister((yyvsp[(1) - (5)].s), (yyvsp[(3) - (5)].f));}
     break;
 
   case 11:
 
 /* Line 1806 of yacc.c  */
-#line 50 "simpleCalc.y"
+#line 57 "simpleCalc.y"
     { printf("<stmt> -> <expression> = %f\n", (yyvsp[(1) - (3)].f)); }
     break;
 
   case 12:
 
 /* Line 1806 of yacc.c  */
-#line 51 "simpleCalc.y"
+#line 58 "simpleCalc.y"
     { printf("%s -> %f\n", (yyvsp[(1) - (3)].s), findRegister((yyvsp[(1) - (3)].s)));}
     break;
 
   case 15:
 
 /* Line 1806 of yacc.c  */
-#line 56 "simpleCalc.y"
+#line 63 "simpleCalc.y"
     { printf("<expression> -> <expression> + <term>\n"); (yyval.f) = (yyvsp[(1) - (3)].f) + (yyvsp[(3) - (3)].f); }
     break;
 
   case 16:
 
 /* Line 1806 of yacc.c  */
-#line 57 "simpleCalc.y"
+#line 64 "simpleCalc.y"
     { printf("<expression> -> <expression> - <term>\n"); (yyval.f) = (yyvsp[(1) - (3)].f) - (yyvsp[(3) - (3)].f); }
     break;
 
   case 17:
 
 /* Line 1806 of yacc.c  */
-#line 58 "simpleCalc.y"
+#line 65 "simpleCalc.y"
     { printf("<expression> -> <term>\n");(yyval.f) = (yyvsp[(1) - (1)].f); }
     break;
 
   case 18:
 
 /* Line 1806 of yacc.c  */
-#line 61 "simpleCalc.y"
+#line 68 "simpleCalc.y"
     { printf("<term> -> <term> * <numeric>\n"); (yyval.f) = (yyvsp[(1) - (3)].f) * (yyvsp[(3) - (3)].f); }
     break;
 
   case 19:
 
 /* Line 1806 of yacc.c  */
-#line 62 "simpleCalc.y"
+#line 69 "simpleCalc.y"
     { printf("<term> -> <term> / <numeric>\n"); (yyval.f) = (yyvsp[(1) - (3)].f) / (yyvsp[(3) - (3)].f); }
     break;
 
   case 20:
 
 /* Line 1806 of yacc.c  */
-#line 63 "simpleCalc.y"
+#line 70 "simpleCalc.y"
     { printf("<term> -> <numeric> ^ <numeric>\n"); (yyval.f) = pow((yyvsp[(1) - (3)].f), (yyvsp[(3) - (3)].f)); }
     break;
 
   case 21:
 
 /* Line 1806 of yacc.c  */
-#line 64 "simpleCalc.y"
+#line 71 "simpleCalc.y"
     {printf("<term> -> <numeric>\n"); (yyval.f) = (yyvsp[(1) - (1)].f);}
     break;
 
   case 22:
 
 /* Line 1806 of yacc.c  */
-#line 67 "simpleCalc.y"
+#line 74 "simpleCalc.y"
     { printf("<INTEGER>\n"); (yyval.f) = (yyvsp[(1) - (1)].i); }
     break;
 
   case 23:
 
 /* Line 1806 of yacc.c  */
-#line 68 "simpleCalc.y"
+#line 75 "simpleCalc.y"
     { printf("<FLOAT>\n"); (yyval.f) = (yyvsp[(1) - (1)].f); }
     break;
 
@@ -1707,7 +1707,7 @@ yyreturn:
 
 
 /* Line 2067 of yacc.c  */
-#line 71 "simpleCalc.y"
+#line 78 "simpleCalc.y"
 
 void assignRegister(char* reg, float value) {
 	char* magic;
@@ -1766,3 +1766,4 @@ float findRegister(char* reg) {
 					break;
 	}
 }
+
