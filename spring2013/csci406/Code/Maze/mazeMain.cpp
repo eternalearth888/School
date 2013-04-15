@@ -53,10 +53,13 @@ int main() {
 		allEdges.push_back(village);
 		allEdges.push_back(village2);		
 	}
+	allEdges.pop_back();
+	allEdges.pop_back();
 
 	inputFile.close();
 
-	cout << "depthFirstSearch: " << endl;
+	// printAllEdges();
+	cout << "Depth First Search: " << endl;
 	depthFirstSearch(0);
 
 	return 0;
@@ -70,11 +73,11 @@ void printAllEdges() {
 
 void printPath() {
 	cout << "Path Length: " << path.size() << endl;
-	cout << "A ";
+	cout << "[A, ";
 	for (int i = 0; i < path.size(); i++) {
-		cout << path.at(i).getInitial() << " ";
+		cout << path.at(i).getInitial() << ", ";
 	}
-	cout << "j" << endl;
+	cout << "j]" << endl;
 }
 
 
@@ -83,7 +86,7 @@ void depthFirstSearch(int vertex) {
 
 	allEdges.at(currentVertex).setSeen(1);
 
-	cout << "DFS allEdges: " << allEdges.at(currentVertex).getInitial() << endl;
+	// cout << "DFS allEdges: " << allEdges.at(currentVertex).getInitial() << endl;
 
 	for (int i = 0; i < allEdges.size(); i++) {
 		if (i != currentVertex) {
@@ -92,7 +95,6 @@ void depthFirstSearch(int vertex) {
 					if (allEdges.at(i).getColor() == allEdges.at(currentVertex).getColor() || allEdges.at(i).getType() == allEdges.at(currentVertex).getType()) {
 						if (allEdges.at(i).getNext() != 'j') {
 							path.push_back(allEdges.at(i));
-							cout << "hello" << endl;
 							depthFirstSearch(i);
 						} else {
 							path.push_back(allEdges.at(i));
