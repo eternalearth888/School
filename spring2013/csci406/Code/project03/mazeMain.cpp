@@ -18,7 +18,7 @@ void depthFirstSearch(int vertex);
 
 int main() {
 	readFile();
-	printAllEdges();
+//	printAllEdges();
 	depthFirstSearch(0);
 
 	return 0;
@@ -90,7 +90,7 @@ void depthFirstSearch(int vertex) {
 
 	allEdges.at(currentVertex).setSeen(1);
 
-	cout << "DFS allEdges: " << allEdges.at(currentVertex).getInitial() << endl;
+//	cout << "DFS allEdges: " << allEdges.at(currentVertex).getInitial() << endl;
 
 	for (int i = 0; i < allEdges.size(); i++) {
 		if (i != currentVertex) {
