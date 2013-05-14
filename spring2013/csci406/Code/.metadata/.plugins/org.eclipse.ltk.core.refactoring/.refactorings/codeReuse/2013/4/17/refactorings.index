@@ -1,0 +1,25 @@
+1367034201770	Delete element
+1367034219344	Rename type 'AngleGame'
+1367034228269	Rename type 'Projectile'
+1367034236474	Rename type 'Target'
+1367034242598	Rename type 'World'
+1367034322807	Rename local variable 'cannon'
+1367034757704	Rename field 'world'
+1367034764966	Rename local variable 'w'
+1367034773668	Rename field 'numTargetsBox'
+1367034780571	Rename field 'genTargetsButton'
+1367034792355	Rename field 'clearTargetsButton'
+1367034799540	Rename field 'numTargetsLabel'
+1367041491225	Delete element
+1367041496938	Rename type 'World'
+1367041695019	Delete elements
+1367041712185	Rename type 'World'
+1367041717245	Rename type 'Target'
+1367041758302	Rename type 'RunMe'
+1367041764212	Rename type 'AngleGame'
+1367044736489	Rename local variable 'readRules'
+1367045646075	Delete elements
+1367045650435	Rename resource 'pokemon2'
+1367045675777	Delete element
+1367045750649	Delete element
+1367085678173	Rename field 'crate'

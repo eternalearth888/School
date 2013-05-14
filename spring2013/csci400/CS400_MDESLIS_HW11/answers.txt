@@ -1,0 +1,68 @@
+1) What is meant by a “dangling pointer” and what options are available to the language designer to 
+deal with it? 
+	+	A dangling pointer, or dangling reference, is a pointer that contains the address of a heap-dynamic variable that has been deallocated.
+	+	Options:
+			+	The actual pointer variable points only at tombstones
+				+ 	When heap-dynamic variable de-allocated, tombstone remainds but it is set to nil
+				+	Reference to dangling pointer can thus be detected
+			+	Heap-dynamic variables are represented as variable plus cell for integer lock value
+				+	When heap dynamic variable allocated, lock value is created and placed in lock cell of variable and key cell of pointer
+				+	Accesses compare key value of pointer to lock value of cell. Must match to be legel. If copy pointer, must copy key value. When dispose variable, clear lock value, so future accesses are all illegal
+
+2) What is a “memory leak” and what options are available to the language designer to deal with it? 
+	+	Memory leak occures when the first heap-dynamic variable is inaccessible/lost.
+	+	Options
+			+	A heap-dynamic variable may be implicitly deallocated at the end of the scope of its pointer type; thus lessening the need for explicit deallocation
+			+	Explicitly dealloacting the heap-dynamic variable
+
+3) What does it mean if the operands of an operator are of “compatible” types? 
+	+	A compatible type is one that either is legal for the operator or is allowed under language rules to be implicitly converted by compiler generated code to a legal type.
+
+
+4) Describe the reference counter approach to garbage collection. What are the advantages and 
+disadvantages? 
+	+	The reference counter method of storage reclamation accomplishes its goal by maintaining in every cell a counter that stores the number of pointers that are currently pointing at the cell. Embedded in the decrement operation for the reference counters, which occurs when a pointer is disconnected from the cell, is a check for a zero value. If the reference counter reaches zero, it means that no program pointers are pointing at the cell, and it has thus become garbage and can be returned to the list of available space.
+	+	Disadvantages:
+		+	If storage cells are relatively small, the space required for the counters is significant.
+		+	Some execution time is obviously required to maintain the counter values. Every time a pointer value has changed, the cell which it is not pointing must have its counter incremented.
+		+	Complications arise when a collection of cells is connected circularly. 
+	+	Advantages:
+		+	It is intrinsically incremental. Its actions are interleaved with those of the application, so it never causes significant delays  in the execuation of the application
+
+
+5) Describe the mark/sweep approach to garbage collection. 
+	+	Consists of three distinct phases. 
+		+	All cells in the heap have their indicators set to indicate they are garbage. This is a correct assumption for only SOME of the cells. 
+		+	Called the marking phase, is most difficualt. Every pointer in the program is traced into the heap, and all reachable cells are marked as not being garbage.
+		+	Sweep phase: All cells in the heap that have not been specifically marked as still being used are returned to the list of available space
+
+
+6) What is meant if a language is said to exhibit “guaranteed short circuiting”? 
+	+	An expression in which the result is determined without evaluating all of the operands and/or operators
+
+7) What is a “widening” conversion and what is a “narrowing” conversion? 
+	+	Widening conversions can include at least approximations to all the values of the original type
+	+	Narrowing conversions cannot include all of the values of the original type
+
+8) What are “functional side effects” and why do most languages permit them, despite the loss of 
+referential transparency that typically results? 
+	+	Functional Side Effects: when a function changes a two-way parameter or a non-local variable
+	+	Most languages to permit them because it allows it to be more flexible and easier to work with
+
+9) In languages such as C, C++, Perl, and JavaScript, the assignment operation is also an expression. 
+What does this mean and what are the advantages and disadvantages of it? 
+	+	The assignment statement produces a result, which is the same as the values assigned to the target. Therefore it can be used as an expression and operand in other expressions. This designe treats the assignment operator much like any other binary operator, except that is has the side effect of changing its left operand.
+
+	+	Advantage:
+		+	Easier to use
+		+	Efficiency
+	+	Disadvantage:
+		+	Provides yet another kind of expression side-effect
+			+	Leads to expressions that are difficult to read and understand
+
+10) What does it mean to “dereference” a pointer and under what conditions can doing so be unsafe, 
+even if no write operation is being performed? 
+	+	Derefencing a pointer is when the pointeer can be interpreted as a reference to the value in the memory cell pointed to by the memory cell to which the pointer variable is bound. (The pointer is interpreted as an indirect reference)
+	+	Conditions where it can be unsafe:
+		+	If the pointer has been deallocated already
+		+	Try to dereference a null pointer
