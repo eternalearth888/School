@@ -24,4 +24,8 @@
     <string name="add_5_p3">+5</string>
     <string name="add_10_p3">+10</string>
     <string name="add_ace_p3">+Ace</string>
+    
+    <!-- Finish -->
+    <string name="reset_game">RESET</string>
+    <string name="finish_game">FINISH</string>
 </resources>
