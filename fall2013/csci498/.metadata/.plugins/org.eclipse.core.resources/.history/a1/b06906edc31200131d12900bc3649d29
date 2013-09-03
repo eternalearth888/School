@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crazy Rummy</string>
+    <string name="action_settings">Settings</string>
+    
+    // All Player One Stuff
+
+    <string name="player_1">Player 1</string>
+	<string name="player_1_score">0</string>    
+
+    <string name="button_Ace">+Ace</string>
+    <string name="button_Ten_Jack_Queen_King">+10</string>
+    <string name="button_Else">+5</string>
+    <string name="button_reset_player_one">RESET</string>
+    
+    // All Player Two Stuff
+</resources>

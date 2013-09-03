@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#089BDF"
+    android:orientation="vertical" >
+
+    <!-- Player 2 -->
+
+    <TextView
+        android:id="@+id/player_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/player_2" />
+
+    <TextView
+        android:id="@+id/player_2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/player_2_score" />
+
+    <Button
+        android:id="@+id/add_5_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_2"
+        android:text="@string/add_5_p2" />
+
+    <Button
+        android:id="@+id/add_10_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_2"
+        android:layout_toRightOf="@+id/add_5_p2"
+        android:text="@string/add_10_p2" />
+
+    <Button
+        android:id="@+id/add_ace_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_2"
+        android:layout_toRightOf="@+id/add_10_p2"
+        android:text="@string/add_ace_p2" />
+
+</RelativeLayout>

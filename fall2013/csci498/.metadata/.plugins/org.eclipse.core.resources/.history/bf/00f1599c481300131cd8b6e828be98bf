@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3AD7F"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/player_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/player_1" />
+    
+    <TextView
+        android:id="@+id/player_1_score"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="@+id/player_1"
+		android:text="@string/player_1_score" />
+    
+    <TextView
+        android:id="@+id/player_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_1" 
+        android:text="@string/player_2"/>
+    
+    <TextView
+        android:id="@+id/player_2_score"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/player_one_score"
+		android:layout_alignParentRight="true"
+		android:text="@string/player_2_score" />    
+    <Button
+        android:id="@+id/reset_game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quit_game"
+        android:text="@string/button_reset" />
+
+    <Button
+        android:id="@+id/quit_game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_quit" />
+
+</RelativeLayout>

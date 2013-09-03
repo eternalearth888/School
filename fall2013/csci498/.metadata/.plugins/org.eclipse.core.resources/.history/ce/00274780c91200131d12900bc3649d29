@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D076"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- Player One -->
+
+    <TextView
+        android:id="@+id/player_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFE"
+        android:text="@string/player_1" />
+
+    <Button
+        android:id="@+id/score_ace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_1"
+        android:layout_toRightOf="@+id/score_ten"
+        android:text="@string/button_Ace" />
+
+    <Button
+        android:id="@+id/score_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_1"
+        android:layout_toRightOf="@+id/score_five"
+        android:text="@string/button_Ten_Jack_Queen_King" />
+
+    <Button
+        android:id="@+id/score_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_1"
+        android:text="@string/button_Else" />
+
+    <Button
+        android:id="@+id/score_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/player_1"
+        android:layout_toRightOf="@+id/score_ace"
+        android:text="@string/button_reset_player_one" />
+
+    <TextView
+        android:id="@+id/player_1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFE"
+        android:hint="@string/player_1_score" />
+
+    <!-- Player Two -->
+
+    <TextView
+        android:id="@+id/player_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/score_five"
+        android:textColor="#FFFFFE"
+        android:text="@string/player_2" />
+
+    <Button
+        android:id="@+id/score_ace_2"
+        android:shadowColor="#B3D3F8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_2"
+        android:layout_toRightOf="@+id/score_ten_2"
+        android:text="@string/button_Ace_2" />
+
+    <Button
+        android:id="@+id/score_ten_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_2"
+        android:layout_toRightOf="@+id/score_five_2"
+        android:text="@string/button_Ten_Jack_Queen_King_2" />
+
+    <Button
+        android:id="@+id/score_five_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_2"
+        android:text="@string/button_Else_2" />
+
+    <Button
+        android:id="@+id/score_reset_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/player_2"
+        android:layout_toRightOf="@+id/score_ace_2"
+        android:text="@string/button_reset_player_two" />
+
+    <TextView
+        android:id="@+id/player_2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/score_five"
+        android:textColor="#FFFFFE"
+        android:hint="@string/player_2_score" />
+
+    
+
+</RelativeLayout>

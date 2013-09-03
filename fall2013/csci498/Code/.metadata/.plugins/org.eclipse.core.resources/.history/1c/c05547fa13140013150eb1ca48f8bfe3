@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crazy Rummy</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Player 1 -->
+    <string name="player_1">Player 1</string>
+    <string name="player_1_score">0</string>
+    <string name="add_5_p1">+5</string>
+</resources>

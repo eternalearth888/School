@@ -1,0 +1,140 @@
+package com.example.crazyrummy;
+
+import android.R.color;
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity implements OnClickListener {
+
+	// Declaring Player One Stuff
+	Button scoreFiveButtonP1;
+	Button scoreTenButtonP1;
+	Button scoreAceButtonP1;
+	Button resetButtonP1;
+	TextView playerOne;
+	TextView playerOneScore;
+	int playerOneCounter = 0;
+	
+	// Declaring Player Two Stuff
+	Button scoreFiveButtonP2;
+	Button scoreTenButtonP2;
+	Button scoreAceButtonP2;
+	Button resetButtonP2;
+	TextView playerTwo;
+	TextView playerTwoScore;
+	int playerTwoCounter = 0;
+	
+	// Send to new screen
+	Button finishGameButton;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		// Buttons
+		scoreFiveButtonP1 = (Button)findViewById(R.id.score_five);
+		scoreTenButtonP1 = (Button)findViewById(R.id.score_ten);
+		scoreAceButtonP1 = (Button)findViewById(R.id.score_ace);
+		resetButtonP1 = (Button)findViewById(R.id.score_reset);
+		
+		scoreFiveButtonP2 = (Button)findViewById(R.id.score_five_2);
+		scoreTenButtonP2 = (Button)findViewById(R.id.score_ten_2);
+		scoreAceButtonP2 = (Button)findViewById(R.id.score_ace_2);
+		resetButtonP2 = (Button)findViewById(R.id.score_reset_2);
+		
+		finishGameButton = (Button)findViewById(R.id.finish_game);
+		
+		// Score Counter
+		playerOneScore = (TextView)findViewById(R.id.player_1_score);
+		playerTwoScore = (TextView)findViewById(R.id.player_2_score);
+		
+		// Players
+		playerOne = (TextView)findViewById(R.id.player_1);
+		playerTwo = (TextView)findViewById(R.id.player_2);
+		
+		// Set the On Click Listeners on the buttons
+		scoreFiveButtonP1.setOnClickListener(this);
+		scoreTenButtonP1.setOnClickListener(this);
+		scoreAceButtonP1.setOnClickListener(this);
+		resetButtonP1.setOnClickListener(this);
+		
+		scoreFiveButtonP2.setOnClickListener(this);
+		scoreTenButtonP2.setOnClickListener(this);
+		scoreAceButtonP2.setOnClickListener(this);
+		resetButtonP2.setOnClickListener(this);
+
+		finishGameButton.setOnClickListener(this);
+		
+		// Change Font size
+		playerOneScore.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+		playerOne.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+		
+		playerTwoScore.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+		playerTwo.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+	
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public void onClick(View v) {
+		// Player One Score Additions & Reset 
+		if (v == scoreFiveButtonP1) {
+			playerOneCounter=playerOneCounter+5;
+			playerOneScore.setText(Integer.toString(playerOneCounter));
+		}
+		
+		if (v == scoreTenButtonP1) {
+			playerOneCounter=playerOneCounter+10;
+			playerOneScore.setText(Integer.toString(playerOneCounter));
+		}
+		
+		if (v == scoreAceButtonP1) {
+			playerOneCounter=playerOneCounter+15;
+			playerOneScore.setText(Integer.toString(playerOneCounter));
+		}
+		
+		if (v == resetButtonP1) {
+			playerOneCounter=0;
+			playerOneScore.setText(Integer.toString(playerOneCounter));
+		}
+		
+		// Player Two Score Additions & Reset
+		if (v == scoreFiveButtonP2) {
+			playerTwoCounter=playerTwoCounter+5;
+			playerTwoScore.setText(Integer.toString(playerTwoCounter));
+		}
+		
+		if (v == scoreTenButtonP2) {
+			playerTwoCounter=playerTwoCounter+10;
+			playerTwoScore.setText(Integer.toString(playerTwoCounter));
+		}
+		
+		if (v == scoreAceButtonP2) {
+			playerTwoCounter=playerTwoCounter+15;
+			playerTwoScore.setText(Integer.toString(playerTwoCounter));
+		}
+		
+		if (v == finishGameButton) {
+			
+		}
+		
+		
+	}
+
+}
