@@ -6,7 +6,6 @@ body {
 
 header {
 	background: url(turtle2.gif) right top no-repeat;
-	height: 85px;
 	background-color: #D5EDB3;
 	text-align: center;
 	border: 1px solid;
@@ -26,8 +25,8 @@ a{
 	border-color: #333333;
 	border: 1px solid;
 	font-weight: bold;
-	text-indent: 20px;
 	padding: 5px;
+	margin-left: 20px;
 	color: #333333;
 	text-decoration: none;
 }

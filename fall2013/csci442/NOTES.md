@@ -112,26 +112,36 @@ Q.1.17 OS design issues:
 Exective Access Time (EAT)
 EAT = how long it takes on average to access data once requested
 • suppose a two-level storage hierarchy exists: cache (to hold data) and memory
-•
-suppose time to update cache/etc. is negligible
+• suppose time to update cache/etc. is negligible
 suppose 80% hit ratio in cache
 suppose cache access time = 50 ms
 suppose memory access time = 750 ms
-• Q.1.18 EAT =
+• Q.1.18 EAT = (H_c)(T_c)+(H_c)(T_c+T_m)
+			 = (T_c)+(1-H_c)(T_m)
+			 = (50)(.8)+(.2)(50+750)
+
 Q.1.19
 1.7 I/O Communication Techniques
 NOTE: Equation 1.1 in Appendix 1A generalizes this example
 What are three techniques for I/O operations?
-3.
-2.
-1.
+1. Programmed I/O
+2. Interrupt-drive I/O
+3. Direct Memory Access (DMA)
+
 Q.1.20
 1.8 Multiprocessor/Multicore
 What are three popular approoaches for providing parallelism?
-3.
-2.
-1.
-16
+1.  Symmetric Multi Processing (SMP) [Figure 1.19 in textbook]
+		Replicating processors multiple identical processors (tightly coupled)
+
+2.	Multicore computers: multi-processors on the SAME chip
+		8-core system = 2 processors with 4 cores
+
+3.  Clusters
+		Clusters used extensively to build large super computers
+------------------------------------------------------------
+-Caches are critical to modern high speed processors
+-Miltiple copies of a block can easily get inconsistent
 
 /**************/
 

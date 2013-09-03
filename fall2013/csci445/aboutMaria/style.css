@@ -31,12 +31,11 @@ div#content {
 h1 { 
 	color:#F3357D;
 	text-align: center; 
-	text-shadow: 2px 2px #333333;
+	text-shadow: 2px 2px 5px #333333;
 }
 
 h2 { 
-	color: #B2C575; 
-	text-shadow: 2px 2px #333333;
+	color: #B2C575;
 }
 
 p.codebox {
