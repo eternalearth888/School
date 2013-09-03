@@ -185,11 +185,15 @@ What services does the kernel provide?
 • system security
 
 
+OS is just a program
+	YES A HUGE PROGRAM, but just a program
+
 	**NO UNIVERSALLY ACCEPTED DEFINITION OF A KERNAL**
 How the kernel provides some of these services is the topic of this course?
 
 Q.2.3 What language is used to write an OS?
-17
+	Past: assembly
+	Now, high-level languages: C or C++
 Q.2.4 Deﬁnitions
 • turnaround time:
 • multiprogramming:

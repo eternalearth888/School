@@ -3,46 +3,43 @@ body {
 	background: url(background.png) center top repeat-y;
 	background-color: rgba(244, 187, 220, 1);
 	text-align: center;
+	font-family: Verdana, sans-serif;
 }
-
 
 header { 
 	background: url(allBrooches.png) repeat top;
 	height: 80px;
+	font-family: Georgia, serif;
 }
 
-div#container {
-	float: center;
-}
-
-
-div#headerContent {
-	text-indent: 2em;
+#name, h1 {
 	font-family: Georgia, monospace;
+	color:#F3357D;
+	text-align: center; 
+	text-shadow: 2px 2px 5px #333333
 }
 
-div#content {
+#content {
 	text-align: left;
 	margin: auto;
 	width:  65%;
 	min-width: 600px;
 }
 
-h1 { 
-	color:#F3357D;
-	text-align: center; 
-	text-shadow: 2px 2px 5px #333333;
-}
-
 h2 { 
 	color: #B2C575;
 }
 
-p.codebox {
+h3 {
+	text-indent: 2em;
+}
+
+.codebox {
 	background-color: rgba(244, 187, 220, 1);
-	border: 1px solid;
-	border-color:#F5579E;
+	border: 1px solid #F5579E;
 	padding: 1em;
+	width: 80%;
+	margin: auto;
 }
 
 footer { 
@@ -50,18 +47,11 @@ footer {
 	font-size: 12px; font-family: Verdana;
 }
 
-p.content { 
+.content { 
 	text-indent: 2em;
-	background-color: rgba(244, 187, 220, 1); 
-	color: #000029;
 }
 
-a:link {
-	text-decoration: none; 
-	color: #F3357D;
-}
-
-a:visited {
+a {
 	text-decoration: none; 
 	color: #F3357D;
 }
@@ -71,6 +61,14 @@ a:hover{
 	color: #B2C575;
 }
 
-a:active{
-	text-decoration: none;
+#validatorCSS {
+	float: right;
+}
+
+#container {
+	margin: auto;
+	min-width: 600px;
+	opacity: 0.6;
+	border: 1px solid #7135AE;
+	background-color: #FFFFFF;
 }
