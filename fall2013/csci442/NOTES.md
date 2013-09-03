@@ -161,23 +161,33 @@ Recent changes in chip design = more complexity
 Chapter 2: Operating Systems Overview
 2.1 Introduction
 Q.2.1 What is an Operating System?
-• a program that provides an interface between the user and the hardware
-• a program that manages resources
--> everything a vendor ships
+• 	a program that provides an interface between the user and the hardware
+• 	a program that manages resources
+	-> everything a vendor ships
 What are the overall goals of an Operating System?
-•
-•
-•
+• 	Convenience for the user
+• 	Efficent for the system
+•	Ease of evolution
 Q.2.2 What is the kernel?
 What services does the kernel provide?
-•
-•
-•
-•
-•
-•
-•
-How the kernel provides some of these services is the topic of this course
+• most frequently used functions of the OS
+• portions of the OS currently in use
+• the one process that runs ALL the time on the computer
+• central CORE of the OS
+• implements processes/threads
+• coordinates access to the processing
+• synchronizes processes/threads
+• manages storage (e.g., MM)
+• provides I/O services
+• implements file system
+• provides protection
+• boot process
+• system security
+
+
+	**NO UNIVERSALLY ACCEPTED DEFINITION OF A KERNAL**
+How the kernel provides some of these services is the topic of this course?
+
 Q.2.3 What language is used to write an OS?
 17
 Q.2.4 Deﬁnitions
