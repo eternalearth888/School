@@ -142,15 +142,28 @@ What are three popular approoaches for providing parallelism?
 ------------------------------------------------------------
 -Caches are critical to modern high speed processors
 -Miltiple copies of a block can easily get inconsistent
+	SOLUTIONS ARE HARDWARE BASED
 
+CHAPTER 1 EXTRAS:
+What is the largest single "user" of microprocessers today?
+	1. Embedded devices
+		Typically embedded means designed to perform ONE of a few dedicated functions
+	2. Cars
+	3. Cell phones
+
+Recent changes in chip design = more complexity
+	Previous focus: increasing number of transistros
+	Current focus: increasing the number of cores
+	Multicore: just a 'few' cores
+	ManyCore: 64? 128? Cores
 /**************/
 
 Chapter 2: Operating Systems Overview
 2.1 Introduction
 Q.2.1 What is an Operating System?
-•
-•
-•
+• a program that provides an interface between the user and the hardware
+• a program that manages resources
+-> everything a vendor ships
 What are the overall goals of an Operating System?
 •
 •
