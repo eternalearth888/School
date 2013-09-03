@@ -1,10 +1,10 @@
 body { 
-	color: #F4CBEC;	
-	background-color: rgba(49,56,77,1);
-	background-position:right;
-	background-repeat: repeat-y;
-	padding:auto;
+	color: #7135AE;	
+	background: url(background.jpg) center top repeat-y;
+	background-color: rgba(244, 187, 220, 1);
+	text-align: center;
 }
+
 
 header { 
 	background: url(allBrooches.png) repeat top;
@@ -12,20 +12,9 @@ header {
 }
 
 div#container {
-	background: url(borderRight.png) right top repeat-y;
-	margin 0 auto;
-	width: 100%;
-	height: 100%;
+	float: center;
 }
 
-div#rightSide {
-	color: transparent;
-/*	background: url(borderRight.png) right top repeat-y;*/
-	float: right;
-	display: inline;
-	width: 250px;
-	height: 1850px;
-}
 
 div#headerContent {
 	margin: 1em;
@@ -33,34 +22,39 @@ div#headerContent {
 }
 
 div#content {
-	width: 75%;
+	text-align: left;
+	margin-left: 20em;
+	margin: 0 aut;
+	border: 0px;
+	width:  50%;
 	margin: 1em;
 }
 
 h1 { 
-	color:#FEE799;
+	color:#F3357D;
 	text-align: center; 
 }
 
 h2 { 
-	color: #F5579E; 
+	color: #B2C575; 
 }
 
 p.codebox {
-	background-color:#D3BBBE;
-	color: rgba(49,56,77,1);
+	background-color:#FBD6E5;
+	color: #9AB800;
 	border: 1px solid;
 	border-color:#F5579E;
 	padding: 1em;
 }
 
 footer { 
+	color: #DA0000;
 	font-size: 12px; font-family: Verdana;
 }
 
 p.content { 
 	background-color: #D3BBBE; 
-	color: rgba(49,56,77,1);
+	color: #000029;
 }
 
 a:link {
