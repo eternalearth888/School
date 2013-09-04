@@ -1,0 +1,67 @@
+body {
+	background-color: #F4FFE4;
+	color: #333333;
+	font-family: Verdana, sans-serif;
+}
+
+header {
+	background: url(turtle2.gif) right top no-repeat;
+	background-color: #D5EDB3;
+	text-align: center;
+	border: 1px solid;
+	border-color: #333333;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #828282;
+	text-shadow: 3px 3px 5px #666;
+}
+
+header,h1,h2 {
+	font-family: Georgia, serif;
+}
+
+nav {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+a {
+	color: #333333;
+	background-color: #D5EDB3;
+	border-color: #333333;
+	border: 1px solid;
+	font-weight: bold;
+	padding: 5px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.company_name {
+	font-weight: bold;
+}
+
+.motto {
+	font-style: italic;
+}
+
+#content {
+	padding: .5em;
+}
+
+#intro {
+	text-indent: 2em;
+}
+
+#services {
+	word-spacing: 1.5px;
+}
+
+#wrapper {
+	width: 80%;
+	background-color: #FFFFFF;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	min-width: 600px;
+	min-height: 550px;
+	margin: auto;
+}
+
