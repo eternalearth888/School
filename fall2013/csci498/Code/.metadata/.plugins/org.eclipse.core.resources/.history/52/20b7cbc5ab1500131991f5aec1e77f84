@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         layout="@layout/player_1" />
 
 
@@ -23,7 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/player_1_layout"
-        android:layout_margin="5dp"
         layout="@layout/player_2" />
 
     <include
@@ -31,7 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/player_2_layout"
-        android:layout_margin="5dp"
         layout="@layout/player_3" />
     
     
