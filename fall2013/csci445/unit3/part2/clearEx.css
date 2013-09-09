@@ -1,0 +1,29 @@
+h1 {
+	background-color: blue;
+}
+
+#cat_right {
+	float: right;
+	border: 2px solid yellow;
+	margin-bottom: 5px;
+}
+
+#turtle_left {
+	float: left;
+	border: 2px solid blue;
+}
+
+.div3 {
+	background-color: #BBE6E8;
+	width: 250px;
+	height: 180px;
+	overflow: auto;
+}
+
+.div4 {
+	background-color: #F2A5F2;
+}
+
+.clearright {
+	clear: right;
+}

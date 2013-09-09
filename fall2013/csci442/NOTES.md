@@ -194,36 +194,54 @@ How the kernel provides some of these services is the topic of this course?
 Q.2.3 What language is used to write an OS?
 	Past: assembly
 	Now, high-level languages: C or C++
+
 Q.2.4 Deﬁnitions
-• turnaround time:
-• multiprogramming:
-• time slice:
-• context/process switch:
-• parallel processing versus concurrent processing:
+• turnaround time: they delay between job submission and job completion
+• multiprogramming: concurrent execution of processes
+	*by definition, a processes are in memory*
+• time slice: each process gets the CPU for a slice of time or until process blocks/terminates
+	-at the end of time slice
+	-process
+• context/process switch: when the OS switches from one process (or context) to another
+• parallel processing versus concurrent processing: actual vs illusion of simultaneous operation
+
 2.2 Evolution of Operating Systems
 Early Systems (serial processing systems)
 • no operating system
 • large single-process machines
-• input devices:
-• output devices:
+• input devices: card readers, tape drices, toggle switches, etc.
+• output devices: line printers, tape drivers, card pucnhes, and display lights
+
+PROBLEM: setup time ws unacceptable (WAY TOO LONG)
+
 Batch Systems
 • operating system called a monitor
-• Q.2.5 The main feature of a batch system is ...
+• Q.2.5 The main feature of a batch system is ...lack of user interaction whiles jobs are 
 • operator sorts submitted jobs by job type
 batch similar jobs together ! less set-up time for monitor
 • monitor does automatic job sequencing
 • this early OS included protection of system:
-–
-–
-–
+– memory protection
+– CPU protection
+– DEVICE PROTECTION
+	led to concept of MODES of operation today
+	kernel mode: execute privileged intructions
+	user mode: execute user programs
+
 • Q.2.6 What was turnaround time for a job submitted to a batch system?
-• problem 1:
-• problem 2:
-18Time Sharing systems
-• Q.2.7 The main features of a time share system are ...
+	Minutes, hours, days
+• problem 1: CPU and I/O(extremely slow) did not process in parallel
+	Solution: Multiprogrammed Batch Systems, allowed multiple things to be operating in parallel
+• problem 2: User response time was LONG
+	Solution: Time share systems
+
+Time Sharing systems
+• Q.2.7 The main features of a time share system are ...user interacts with system
 • time sharing systems became common in the early 1970’s
 Multiprogrammed Batch Systems vs. Time Sharing systems
+
 Modern operating systems
+
 • Consider System Types:
 – Mainframe Computers
 – Personal Computers (one CPU)
@@ -237,16 +255,34 @@ Modern operating systems
 – Handheld Systems
 ⇤ PDAs, Pocket-PCs, cell phones, etc.
 ⇤ often have special-purpose embedded operating system
+
 • Q.2.8 Summary of System Types:
-–
-–
-–
-19
+-enormous scale
+-very heterogenous
+-huge dynamic range
+
+OS development today is pretty complex!
+Today's OS:
+-multi user
+-multi-processor
+-multi-threaded
+
 • Q.2.9 Consider Challenges for OS Developers
-– CPUs
-– Network
-– Storage
+– CPUs: range from single sensor motes to GPUS
+	Cores: from one -> 100s of cores
+	Clusters: few machines -> 10,000 of machines
+
+– Network: range from data centers to Internet to networks in home, etc
+	Latency: from nanoseconds -> seconds (satellite)
+	Bandwidth: from Kbps -> Gbps
+		Terabit networks...in future(2015?)
+– Storage: range from caches to huge disks
+	Size: mb -> tb
+	Acces time: few nanosecs -> millisecs
+LOTS of variablility and complexity exists in systems today
+
 think about how complex the OS must be for today’s systems
+
 Q.2.10 How do we tame complexity?
 Virtual Machines
 • Q.2.11 Deﬁnition:

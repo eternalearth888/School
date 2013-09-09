@@ -1,0 +1,15 @@
+Name: Samuel Markoe (smarkoe)
+Assignment: Lab 1
+Date Submitted: Monday, September 2, 2013 11:36:46 AM MDT
+Current Grade: Not Yet Graded
+
+Submission Field:
+There is no student submission text data for this assignment.
+
+Comments:
+Added a couple lines to prevent crashes.
+
+Files:
+	Original filename: lab01.zip
+	Filename: Lab 1_smarkoe_attempt_2013-09-02-11-36-46_lab01.zip
+
