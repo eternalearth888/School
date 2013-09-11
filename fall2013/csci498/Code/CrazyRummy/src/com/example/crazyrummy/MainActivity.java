@@ -49,9 +49,9 @@ public class MainActivity extends Activity implements OnClickListener {
 	Button finish;
 
 	// Intent stuff
-	public static final String p1_score = "com.example.crazyrummy";
-	public static final String p2_score = "com.example.crazyrummy";
-	public static final String p3_score = "com.example.crazyrummy";
+	public static final String p1_score = "com.example.crazyrummy.p1";
+	public static final String p2_score = "com.example.crazyrummy.p2";
+	public static final String p3_score = "com.example.crazyrummy.p3";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

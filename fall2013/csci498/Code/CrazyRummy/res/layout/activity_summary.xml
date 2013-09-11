@@ -30,5 +30,14 @@
         android:layout_below="@+id/player_2_final_layout"
         android:layout_margin="5dp"
         layout="@layout/player_3_final" />
+    
+     <include
+        android:id="@+id/new_end_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        layout="@layout/summary_buttons" />
+    
 
 </RelativeLayout>
