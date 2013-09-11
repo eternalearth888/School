@@ -11,48 +11,98 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-
-
+/**
+ * Description: This is the MainActivity class for the Crazy Rummy score keeper app.
+ * It is the first activity created and what the user first sees when running the app from
+ * the beginning. It is also shown when the user chooses to play a new game.
+ * 
+ * Document statement: The Class MainActivity
+ * 
+ * @author: Maria Deslis
+ *
+ */
 public class MainActivity extends Activity implements OnClickListener {
 	// Player 1
+	/** The add_5_p1. */
 	Button add_5_p1;
+	
+	/** The add_10_p1. */
 	Button add_10_p1;
+	
+	/** The add_ace_p1. */
 	Button add_ace_p1;
 
+	/** The player_1. */
 	TextView player_1;
+	
+	/** The player_1_score. */
 	TextView player_1_score;
 
+	/** The counter_p1. */
 	int counter_p1 = 0;
 
 	// Player 2
+	/** The add_5_p2. */
 	Button add_5_p2;
+	
+	/** The add_10_p2. */
 	Button add_10_p2;
+	
+	/** The add_ace_p2. */
 	Button add_ace_p2;
 
+	/** The player_2. */
 	TextView player_2;
+	
+	/** The player_2_score. */
 	TextView player_2_score;
 
+	/** The counter_p2. */
 	int counter_p2 = 0;
 
 	// Player 3
+	/** The add_5_p3. */
 	Button add_5_p3;
+	
+	/** The add_10_p3. */
 	Button add_10_p3;
+	
+	/** The add_ace_p3. */
 	Button add_ace_p3;
 
+	/** The player_3. */
 	TextView player_3;
+	
+	/** The player_3_score. */
 	TextView player_3_score;
 
+	/** The counter_p3. */
 	int counter_p3 = 0;
 
 	// Reset & Finish Button
+	/** The reset. */
 	Button reset;
+	
+	/** The finish. */
 	Button finish;
 
 	// Intent stuff
+	/** The Constant p1_score. */
 	public static final String p1_score = "com.example.crazyrummy.p1";
+	
+	/** The Constant p2_score. */
 	public static final String p2_score = "com.example.crazyrummy.p2";
+	
+	/** The Constant p3_score. */
 	public static final String p3_score = "com.example.crazyrummy.p3";
 	
+	
+	/**
+	 * This method implements OnClickListener Interface and defines our objects.
+	 *
+	 * @param savedInstanceState Bundle
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -119,6 +169,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		finish.setOnClickListener(this);
 	}
 
+	/**
+	 * This method creates options menu/activity bar in the activity
+	 * 
+	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+	 * 
+	 * @param menu Menu
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -126,6 +183,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		return true;
 	}
 
+	/**
+	 * This method tells the activity what to do when certain buttons are pushed
+	 * 
+	 * @see android.view.View.OnClickListener#onClick(android.view.View)
+	 * 
+	 * @param v View
+	 */
 	@Override
 	public void onClick(View v) {
 		// Player 1
@@ -182,6 +246,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 	}
 
+	/**
+	 * Creates the summary activity. When it is called in onClick it
+	 * stores the current scores for the players and passes them on to
+	 * SummaryActivity and ends MainActivity
+	 */
 	void CreateSummaryActivity() {
 		Intent summaryIntent = new Intent( this, SummaryActivity.class);
 		
