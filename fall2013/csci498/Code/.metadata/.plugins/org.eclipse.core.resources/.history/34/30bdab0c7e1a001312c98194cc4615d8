@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1D1D1"
+    android:orientation="vertical" >
+	
+    <!-- End Message -->
+    
+    <TextView
+        android:id="@+id/endgame_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/endgame_message" />
+
+      <include
+        android:id="@+id/player_1_final_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        layout="@layout/player_1" />
+
+
+    <include
+        android:id="@+id/player_2_final_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_1_final_layout"
+        android:layout_margin="5dp"
+        layout="@layout/player_2" />
+
+    <include
+        android:id="@+id/player_3__final_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_2_final_layout"
+        android:layout_margin="5dp"
+        layout="@layout/player_3" />
+    
+    
+    
+    
+</RelativeLayout>

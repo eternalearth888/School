@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crazy Rummy</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Player 1 -->
+    <string name="player_1">Player 1</string>
+    <string name="player_1_score">0</string>
+    <string name="add_5_p1">+5</string>
+    <string name="add_10_p1">+10</string>
+    <string name="add_ace_p1">+Ace</string>
+    
+    <!-- Player 2 -->
+    <string name="player_2">Player 2</string>
+    <string name="player_2_score">0</string>
+    <string name="add_5_p2">+5</string>
+    <string name="add_10_p2">+10</string>
+    <string name="add_ace_p2">+Ace</string>
+    
+    <!-- Player 3 -->
+    <string name="player_3">Player 3</string>
+    <string name="player_3_score">0</string>
+    <string name="add_5_p3">+5</string>
+    <string name="add_10_p3">+10</string>
+    <string name="add_ace_p3">+Ace</string>
+    
+    <!-- Finish -->
+    <string name="reset_game">RESET</string>
+    <string name="finish_game">FINISH</string>
+</resources>

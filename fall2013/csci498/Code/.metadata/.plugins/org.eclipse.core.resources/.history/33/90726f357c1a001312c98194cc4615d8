@@ -1,0 +1,30 @@
+package com.example.crazyrummy;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+public class SummaryActivity extends Activity implements OnClickListener {
+	Bundle b_p1 = getIntent().getExtras();
+	Bundle b_p2 = getIntent().getExtras();
+	Bundle b_p3 = getIntent().getExtras();
+
+	int player_1_score=("key", 0);
+	int player_2_score=("key", 0);
+	int player_3_score=("key, 0");
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setContentView(R.layout.activity_summary);
+		super.onCreate(savedInstanceState);
+	}
+
+	
+	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+
+	}
+}

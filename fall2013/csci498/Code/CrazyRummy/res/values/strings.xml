@@ -28,4 +28,7 @@
     <!-- Finish -->
     <string name="reset_game">RESET</string>
     <string name="finish_game">FINISH</string>
+    
+    <!-- Summary -->
+    <string name="endgame_message">CONGRATULATIONS!</string>
 </resources>
