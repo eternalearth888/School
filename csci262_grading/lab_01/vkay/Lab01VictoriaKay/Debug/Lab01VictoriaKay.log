@@ -1,0 +1,24 @@
+﻿Build started 9/4/2013 11:38:21 PM.
+     1>Project "C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Lab01VictoriaKay\Lab01VictoriaKay.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Lab01VictoriaKay.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt main.cpp /clr:nostdlib 
+         main.cpp
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Debug\Lab01VictoriaKay.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\Lab01VictoriaKay.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Debug\Lab01VictoriaKay.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\main.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Lab01VictoriaKay.vcxproj -> C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Debug\Lab01VictoriaKay.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Debug\Lab01VictoriaKay.exe;#1" /manifest Debug\Lab01VictoriaKay.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Lab01VictoriaKay.unsuccessfulbuild".
+         Touching "Debug\Lab01VictoriaKay.lastbuildstate".
+     1>Done Building Project "C:\Users\Victoria\CSCI262\Lab01VictoriaKay\Lab01VictoriaKay\Lab01VictoriaKay.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.70

@@ -1,8 +1,0 @@
-package com.example.crazyrummy;
-
-import android.app.Activity;
-import android.view.View.OnClickListener;
-
-public class SummaryActivity extends Activity implements OnClickListener {
-
-}

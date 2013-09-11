@@ -1,0 +1,3 @@
+Author: Nathaniel Jacobi Sec B
+To help with this lab, to refresh my memory on how some things work, like fsteam, I used cplusplus.com. The forums and the function explations reminded me of the syntax I needed and what functions I could do.
+Other than that and the lab outline, I was on my own. The flip_horizontal took me a very long time, and I don't think I did it in the cleanest of ways but I got it though, which I am super happy about.
