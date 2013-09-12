@@ -282,55 +282,76 @@ Today's OS:
 LOTS of variablility and complexity exists in systems today
 
 think about how complex the OS must be for today’s systems
-
+/**********************************SEP 12 2013*************************************/
 Q.2.10 How do we tame complexity?
 Virtual Machines
+	DO NOT CALL THEM VM
+
 • Q.2.11 Deﬁnition:
-•
+•	Illusion of own private computer
+
 • Q.2.12 Beneﬁts:
-–
-–
-–
+– if each vmac has low utilization, then share one real processor more efficiently
+– "sanitary" env; if doing something risky, execution is contained (GREAT FOR OS DEVELOPMENT)
+– host machine is protected from the vmac machines
+-- can rapidly port/test new applications in different OS environments
+-- can execute SEVERAL execution environments (different OSs) concurrently on ONE hardware
+
 • Q.2.13 Cons:
-–
-–
+– running each virtual machine has overhead
+– virtual machine concept is difficult to implement
+-- format of virtual machine needs to be standardized (current status??)
+	-- current status: (check piazza)
+
 • Q.2.14 Possible implementations:
-1.
-2.
+1. process virutal machine
+	basically, the virtual machine gets created when the user process is created (and terminated when the user process is terminated)
+2. system virtual machine
+	runs as an application on a host OS
+	--> virtualization layer is the HEART of the virtual machine
+
 202.3 Topics of an Undergraduate OS Course
 1. Processes
-• Q.2.15 Deﬁnition of a process ...
+• Q.2.15 Deﬁnition of a process ... a program in execution
 • process components:
-–
-–
-–
+-- an executable program
+-- an associated data needed by the program
+-- execution context (stack and PCB)
+
 • Consider an example of how processes may be implemented
 – suppose block of contiguous memory allocated to each process
 – each process recorded in a process list, maintained by the OS
-– Q.2.16 Deﬁnitions:
-⇤ process index =
-⇤ program counter =
-⇤ base register =
-⇤ limit register =
+
+– Q.2.16 Deﬁnitions: (see Figure 2.8, 8.1, 8.2)
+⇤ process index = the index of the process currently executing
+⇤ program counter = location of the NEXT instruction to fetch
+⇤ base register = starting address of process (b)
+⇤ limit register = size of the executing process (h)
+
 • Activities associated with processes:
 – process creation and deletion (fork and kill)
 – CPU scheduling of processes
 – process communication (pipes)
 – process synchronization
+
 • Multithreading
 – a multithreaded process allows concurrent threads to execute
 in ONE process
+
 – Q.2.17 Deﬁnitions:
-⇤ a thread is ...
-⇤ a process is ...
-21
-2. Memory (Storage) Management
+⇤ a thread is ... a dispatchable unit of work
+⇤ a process is ... a collection of one or more threads (and associated system resources)
+	MS DOS: single process; one thread
+	Windows/Linux/etx: multiple process; multiple thread
+
+Memory (Storage) Management
 • OS must manage the cache, main memory and secondary storage units
 responsibilities include:
 – prevent processes from interfering with each other’s memory
 – make allocation of storage transparent
 – handle shared memory
-• Virtual memory (VM) allows ...
+
+• Virtual memory (VM) allows ...  The execution of a process that may not be complete in memory
 • VM Details:
 – A process consists of multiple pages
 VM allows individual pages to be swapped in and out during execution
@@ -338,18 +359,42 @@ VM allows individual pages to be swapped in and out during execution
 conceals the fact that memory is limited
 – virtual address spaces can be much larger than real address space
 – VM overallocates memory to increase the degree of multiprogramming
+
+/**AVERAGE AMOUNT OF MEMORY WASTED PER PROCESS!!!!!!
+ * 
+ * 1/2 page per process on average
+ * 
+**/
+
+Main memory = number of fixed length FRAMES
+Process = number of fixed length PAGES
+|page| = |frame| (in most systems)
+
+DOM = degree of multiprogramming
+
+
 – Q.2.18 VM addressing:
-⇤ virtual or logical address =
-⇤ real or physical address =
-• Activities associated with memory management:
+⇤ virtual or logical address = the address the CPU reads during execution
+...then the OS creates...
+⇤ real or physical address = where instruction or data is actually kept
+...the address will have both a page number and an offset...
+
+IF the page size and the frame size are equivalent, then the offsets are equivalent
+
+
+(see Figure 2.10)
+• Activities associated with memory management: 
 – tracking which parts of memory are being used and by which processes
 – allocating memory when space becomes available
 – dynamic mapping between virtual and real addresses
+
 • Activities associated with ﬁle management:
 – create/modify/delete ﬁles/directories
 – mapping of ﬁles onto secondary storage
+
 3. Information Protection and Security
 As the Internet grows, there is an increase in concern for the protection of information
+
 Q.2.19 Much of work in this area falls into four categories:
 • availability -
 • conﬁdentiality -
