@@ -1,0 +1,3 @@
+Challenges: the biggest problem that I had was just jumping in and working on the program instead of reading over the whole assignment first, leading to some really big unessecary head aches.
+
+Like/dislike: I like the assignment in general, it has a real life application. The thing I didn't like is that it feels like this assignment didn't really have much to do with what we are learning in class.

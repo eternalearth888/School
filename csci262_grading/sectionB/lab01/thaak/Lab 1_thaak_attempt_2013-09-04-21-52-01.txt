@@ -1,0 +1,24 @@
+Name: Trevor Haak (thaak)
+Assignment: Lab 1
+Date Submitted: Wednesday, September 4, 2013 9:52:01 PM MDT
+Current Grade: Not Yet Graded
+
+Submission Field:
+There is no student submission text data for this assignment.
+
+Comments:
+There are no student comments for this assignment.
+
+Files:
+	Original filename: README.txt
+	Filename: Lab 1_thaak_attempt_2013-09-04-21-52-01_README.txt
+
+	Original filename: image.h
+	Filename: Lab 1_thaak_attempt_2013-09-04-21-52-01_image.h
+
+	Original filename: image.cpp
+	Filename: Lab 1_thaak_attempt_2013-09-04-21-52-01_image.cpp
+
+	Original filename: main.cpp
+	Filename: Lab 1_thaak_attempt_2013-09-04-21-52-01_main.cpp
+

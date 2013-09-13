@@ -1,0 +1,15 @@
+Name: Richmond Brininger (rbrining)
+Assignment: Lab01
+Date Submitted: Wednesday, September 4, 2013 7:55:43 PM MDT
+Current Grade: Not Yet Graded
+
+Submission Field:
+There is no student submission text data for this assignment.
+
+Comments:
+I am re-submitting this because I noteced some errors in the last submition. This one also contains the bonus functions horizontal_blur and extreme_contrast.
+
+Files:
+	Original filename: LabOne.zip
+	Filename: Lab01_rbrining_attempt_2013-09-04-19-55-43_LabOne.zip
+

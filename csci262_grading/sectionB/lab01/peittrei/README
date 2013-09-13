@@ -1,0 +1,29 @@
+README for CSCI Lab 1 
+
+1. Include names of all people who helped/collaborated as per the syllabus.
+
+	I did the assignment on my own with no assistance from any discussions or
+	interactions with people. I did however use the textbook for this class as
+	well as the textbook for the previous class equivalent (CSCI 261). I also
+	used the Internet a bit for little odds and ends.
+
+2. Describe the challenges you encountered and how you surmounted them.
+
+	The flip horizontal took me the longest. I found I was losing track of how
+	many columns were in a row. I made a 4 x 3 ppm file to assist in debugging
+	this problem. I wound up using this little file while developing the other
+	features as well. Horizontal blur was also tricky. Accounting columns was the
+	hardest part of this.
+
+3. What did you like/dislike about the assignment
+
+	I enjoyed the modularity of this project. It was nice to have a working
+	program after each new module addition.
+
+	This is not a big deal BUT I was not sure if the suggested user interface was
+	the required one. I think it is a bit silly with all the yes no questions. I
+	would have preferred to implement it either as command line switches or some
+	friendlier form of interaction. In the future it would be nice to know if it
+	is okay to branch away from (and improve) any sample user interfaces. 
+
+
