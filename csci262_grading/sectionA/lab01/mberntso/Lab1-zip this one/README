@@ -1,8 +1,0 @@
-1.  I used cplusplus.com as well as the tutorial given with the Lab1 assignment to as references for functions, parameters, and file i/o information. 
-JK Slyby also helped during tutoring hours.
-2.  Understanding how to read in the file one line at a time was the most challenging aspect to me.  I solved this issue when I found the getline function
-in the c++ reference library, although I also struggled with creating the correct parameters for the getline function, as issue I have not yet solved. **UPDATE
-Using double input carrots and the ingenuity of c++, entering lines has become the easiest aspect of the assignment.
-3.  I liked creating the menu and functionality parts of the project, as I enjoy creating loop structures.  I did not dislike the assignment,  but it
-was very time-consuming for me because I haven't coded in 5 years and never before used Java.  I believe my program was not as efficient as it would
-heve been had I taken the prereq to this course. Note that I added Bonus 2: Extreme Contrast.  I beleive this bonus was by far the easiest to create.

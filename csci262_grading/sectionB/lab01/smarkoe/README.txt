@@ -1,5 +1,0 @@
-1. I didn't receive much help from other students in the class for this project; I asked a question on Piazza but the suggestions didn't fix the problem (The professor's help did though!). I also used various websites such as cplusplus.com and stackoverflow to get the syntax of everything down.
-
-2. The main challenge I was faced with was really only learning the differences of structure and syntax between Java and C++. I mainly figured out these problems on my own, through trial & error as well as using Google to tell me what I did wrong. The only one I couldn't figure out was when my output file wouldn't open in GIMP, but I posted the problem on Piazza and Professor Painter-Wakefield figured it out for me! (null characters cause problems when there should be whitespace.)
-
-3. Although it took me a long time, I really liked the assignment. I haven't done much programming in the past 2 years, since I took Java in highschool, and I enjoyed getting back into it. I'm glad we had this simple review lab before we did anything crazy so I had a bit of time to catch up.
