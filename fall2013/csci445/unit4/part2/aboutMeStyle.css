@@ -1,0 +1,53 @@
+body {
+	background-color: #FFFFCC;
+	color: #000066;
+}
+
+table {
+	margin: auto;
+}
+
+th {
+	text-align: center;
+	text-decoration: underline;
+}
+
+td {
+	text-align: left;
+	padding: .5em;
+}
+
+footer,header {
+	margin: auto ;
+	text-align: center;
+	font-size: 28px;
+	font-family: Verdana, sans-serif;
+}
+
+fieldset {
+	border: 1px dashed;
+	border-color:#000066;
+	padding: 1em;
+}
+
+legend {
+	padding: .2em;
+	border: 1px solid;
+	border-color: #000066;
+	font-size: 90%;
+	text-align: center;
+}
+
+#content {
+	margin: auto;
+	padding: .5em;
+	min-width: 600px;
+	width: 80%;
+	background-color: #FFCCCC;
+	border: 1px solid;
+	border-color: #CC6666;
+}
+
+#date {
+	text-align: center;
+	padding: .2em;

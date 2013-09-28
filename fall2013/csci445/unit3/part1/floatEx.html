@@ -1,0 +1,47 @@
+<!-- 
+	Unit 3. A nonsense file used to play with float properties 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="floatEx.css" />
+<title>Float Property</title>
+</head>
+<body>
+	<header>
+		<!-- an image floated right before the h1. What happens if these lines are switched? -->
+		<img id="turtle_right" src="turtle2.gif" alt="turtle logo">
+		<h1>Let's have fun with boxes and turtles!</h1>
+	</header>
+	<div class="div1">
+		This is the outer box.
+		<div class="div2">
+			This is the inner box.
+		</div>
+		<!-- an image floated right within the outer div. What if it was inside the inner box? -->
+		<img id="turtle_right" src="turtle2.gif" alt="turtle logo">
+	</div>
+	<div>
+		<h1>I'm a header<h1>
+	</div>
+	<!-- an image floated right between divs -->
+	<img id="turtle_right" src="turtle2.gif" alt="turtle logo">
+	<div class="div1">
+		This is the outer box.
+		<div class="div2">
+			This is the inner box.
+		</div>
+		<!-- now we float the image left inside the outer div. -->
+		<img id="turtle_left" src="turtle2.gif" alt="turtle logo">
+	</div>
+	<div class="spacer">
+	</div>
+	<!-- and we float to the left after some vertical spacing -->
+	<img id="turtle_left" src="turtle2.gif" alt="turtle logo">
+	<footer>
+		<h1>So much fun with boxes and turtles!</h1>
+		<!-- so here's a float right after a heading. -->
+		<img id="turtle_right" src="turtle2.gif" alt="turtle logo">
+	</footer>
+</body>
+</html>

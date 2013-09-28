@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> mdeslis | aboutMe Form </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="aboutMeStyle.css">
+	</head>
+	<script>
+		function formReset() {
+			document.getElementById("fan").reset();
+		}
+	</script>
+	<body>
+		<header>
+			All About You
+		</header>
+			<div id="content">
+				<div id="date">
+					<form method="post" id="fan" action="thankyou.html">
+						<label for="today">Date:</label>
+						<input type="date" name="today" id="today" />
+					</form>
+				</div>
+				<fieldset>
+					<legend> Personal Info </legend>
+					<form name="about" id="fan" action="thankyou.html" method="post">
+						<label>Name*:</label>
+						<input type="text" name="name" id="name" required="required" placeholder="Last, First" />
+						Password : <input type="password" name="password" id="password" />
+						<br />
+						Email*: <input type="text" name="email" id="email" required="required" placeholder="username@your.domain" autocomplete="on" />
+						Phone (no dashes): <input type="tel" name="phone" id="phone" placeholder="0000000000" maxlength="10" size="10px" />
+						<br />
+						<label for="color">Color</label>
+						<input type="color" name="color" id="color" />
+						&nbsp;
+						<label for="continent">Continent</label>
+						<input type="text" name="continent" id="continent" list="continent"?
+							<datalist id="continent">
+								<option value="North America">
+								<option value="South American">
+								<option value="Africa">
+								<option value="Antartica">
+								<option value="Asia">
+								<option value="Arctic">
+								<option value="Australia">
+							</datalist>
+					</form>
+				</fieldset>
+			<br />
+				<fieldset>
+					<legend> Sailor Moon Fan Club Form  </legend>
+					<form method="post" id="fan" action="thankyou.html">
+					<table>
+						<tr>
+						<td>
+							Which is your favorite Sailor Moon form?
+							<br />
+							<input type="checkbox" name="prototype" id="prototype" value="yes" /> Prototype
+							<br />
+							<input type="checkbox" name="moon" id="moon" value="yes" /> Moon
+							<br />
+							<input type="checkbox" name="super" id="super" value="yes" /> Super
+							<br />
+							<input type="checkbox" name="eternal" id="eternal" value="yes" checked="checked" /> Eternal
+							<br />
+							<input type="checkbox" name="cosmos" id="cosmos" value="yes" /> Cosmos
+							<br />
+							<input type="checkbox" name="princess" id="princess" value="yes" /> Princess
+							<br />
+							<input type="checkbox" name="musical" id="musical" value="yes" /> Musical
+						</td>
+						<td>
+							What is your favorite story arc?
+							<br />
+							<input type="radio" name="favStory" id="favRose" value="rose" /> Rose
+							<br />
+							<input type="radio" name="favStory" id="favSuper" value="super" /> Super
+							<br />
+							<input type="radio" name="favStory" id="favSuperS" value="supers" /> SuperS
+							<br />
+							<input type="radio" name="favStory" id="favStar" value="stars" /> Stars
+							<br />
+							<br />
+							<label for="fan">How big a fan are you?</label>
+							<br />
+							Meh <input type="range" min="0" and max="100" name="fan" id="fan"> #1!
+						</td>
+					<tr>
+						<td>
+							Who is your favorite scout?
+							<br />
+							<select size="2" name="favScout" id="favScout">
+								<option value="Sailor Moon">Sailor Moon</option>
+								<option value="Sailor Chibi-Moon">Sailor Chibi-Moon</option>
+								<option value="Sailor Mercury">Sailor Mercury</option>
+								<option value="Sailor Mars">Sailor Mars</option>
+								<option value="Sailor Jupiter">Sailor Jupiter</option>
+								<option value="Sailor Uranus">Sailor Uranus</option>
+								<option value="Sailor Neptune">Sailor Neptune</option>
+								<option value="Sailor Pluto">Sailor Pluto</option>
+								<option value="Sailor Star Fighter">Sailor Star Fighter</option>
+								<option value="Sailor Star Maker">Sailor Star Maker</option>
+								<option value="Sailor Star Healer">Sailor Star Healer</option>
+								<option value="Sailor Kakyuu">Sailor Kakyuu</option>
+								<option value="Sailor Galaxia">Sailor Galaxia</option>
+							</select>
+						</td>
+						<td>
+							What made you a fan of Sailor Moon?
+							<br />
+							<textarea name="extra" id="extra" cols="40" rows="5">Enter info</textarea>
+						</td>
+					</tr>
+				</table>
+				</form>
+				</fieldset>
+				<table>
+					<tr>
+						<td>
+							<form method="post" id="fan" action="thankyou.html">
+									<input type="submit" value="Make-Up!">
+							</form>
+						</td>
+						<td>
+							<form method="post" id="fan" action="thankyou.html">
+									<input type="reset" onclick="formReset()" value="Reset">
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<footer>
+			"We will not share or sell any personal information obtained from you with any other organization, unless required by law to do so."
+			</footer>
+	</body>
+</html>

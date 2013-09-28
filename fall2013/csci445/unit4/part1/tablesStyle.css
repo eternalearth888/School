@@ -1,0 +1,106 @@
+body {
+	background-color: #FFFFFC;
+}
+
+table {
+	margin: auto;
+}
+
+caption {
+	font-family: Verdana, sans-serif;
+	padding: .5em;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+}
+/** This applies to the schedule table **/
+
+#schedule {
+	margin-top: 2em;
+	min-width: 600px;
+	width: 90%;
+	text-align: left;
+	border: 5px solid;
+	border-color: #000066;
+	background-color: #000066;
+} 
+
+#schedule td {
+	text-align: left;
+	border: 1px solid;
+	border-color: #000066;
+	background-color: #FFF;
+	padding: 2px;
+}
+
+
+#course,#when,#where {
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid;
+	border-color: #000066;
+	background-color: #eaeaea;
+}
+
+
+/** This applies to the study group table **/
+#study {
+	margin-top: 2em;
+	min-width: 600px;
+	width: 80%;
+}
+
+
+thead {
+	font-size: 18px;
+	background-color: rgb(150,214,234);
+	border:1px solid;
+	border-color: #FFFFFF;
+	color: #000066;
+}
+
+tfoot {
+	background-color: rgb(213, 239, 247);
+	border: 1px solid;
+	border-color: #FFFFFF;
+	text-align: center;
+	color: #000066;
+}
+
+#study td {
+	padding: 2px;
+	border-bottom: 1px dashed;
+	border-color: #000000;
+}
+
+#study tr:last-of-type td {
+	border: none;
+}
+
+#study tr:first-of-type td {
+	font-weight: bold;
+}
+
+/** This applies to the refreshements table **/
+
+#refreshments {
+	border: 5px solid;
+	border-color: #000066;
+	background-color: #000066;
+	margin-top: 2em;
+	min-width: 600px;
+	width: 80%;
+}
+
+#who,#what {
+	color: #FFFFFF;
+	background-color:#000066;
+}
+
+#refreshments tr:nth-of-type(odd) {
+	background-color: #eaeaea;
+}
+
+#refreshments tr:nth-of-type(even) {
+	background-color: #ffffff;
+}

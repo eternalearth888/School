@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			mdeslis | transform
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="transformStyle.css">
+		<script>
+			
+
+			function greyScouts() {
+				var v=document.getElementById("scoutCanvas");
+				var scoutstxt=v.getContext("2d");
+				var scouts=document.getElementById("scouts");
+				scoutstxt.drawImage(scouts,0,0);
+			}
+			function colorScouts() {
+				var v=document.getElementById("scoutCanvas");
+				var scoutstxt=v.getContext("2d");
+				var scouts=document.getElementById("scouts");
+				scoutstxt.clearRect(0,0,v.width,v.height);
+			}
+
+			function transformScouts() {
+				if (document.getElementById("scoutButton").value=="Color!") {
+					document.getElementById("scouts").src="images/color.jpg";
+					document.getElementById("scoutButton").value="Power Down!";
+				} else {
+					document.getElementById("scouts").src="images/grey.jpg";
+					document.getElementById("scoutButton").value="Color!";
+				}
+				colorScouts();
+				greyScouts();
+			}
+		</script>
+	</head>
+	<body onload="greyScouts()">
+			<table>
+				<tr>
+					<td><input id="scoutButton" type="button" onclick="transformScouts()" value="Color!" /></td>
+				</tr>
+				<tr>
+					<td><canvas id="scoutCanvas" width="500" height="374"></canvas></td>
+				</tr>
+			</table>
+			<img id="scouts" src="images/grey.jpg" style="visibility:hidden"/>
+	</body>
+</html>

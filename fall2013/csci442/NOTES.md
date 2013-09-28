@@ -339,7 +339,7 @@ conceals the fact that memory is limited
 – virtual address spaces can be much larger than real address space
 – VM overallocates memory to increase the degree of multiprogramming
 – Q.2.18 VM addressing:
-⇤ virtual or logical address =
+⇤ virtual or logical address = address the CPU reads during execution; CPU uses it for VM, and translates it into a page and an offset and translates it into a physical address
 ⇤ real or physical address =
 • Activities associated with memory management:
 – tracking which parts of memory are being used and by which processes
@@ -362,7 +362,7 @@ Q.2.19 Much of work in this area falls into four categories:
 – di↵erential responsiveness
 • Q.2.20 Schedulers:
 – short-term (or CPU) scheduler:
-– medium-term (or swapper) scheduler:
+– medium-term (or swapper) scheduler: swaps processes
 – long-term (or job) scheduler:
 • I/O queues exist for each I/O device
 5. System Structure

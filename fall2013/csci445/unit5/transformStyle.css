@@ -1,0 +1,22 @@
+body {
+	background: url('images/background.png') repeat;
+	color: #000066;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	text-align:center;
+	padding:.5em;
+}
+
+canvas {
+	min-width: 600px;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+}
+
+
