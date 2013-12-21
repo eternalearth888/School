@@ -1,0 +1,5 @@
+package edu.mines.mdeslis_nhetrick_weatherrss;
+
+public class DownloadDocumentTask {
+
+}

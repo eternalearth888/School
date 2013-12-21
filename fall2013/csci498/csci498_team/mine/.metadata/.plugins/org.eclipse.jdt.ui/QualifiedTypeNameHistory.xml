@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.RadioGroup.OnCheckedChangeListener"/>
+<fullyQualifiedTypeName name="com.google.android.gms.maps.model.BitmapDescriptorFactory"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.R.dimen"/>
+<fullyQualifiedTypeName name="com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener"/>
+<fullyQualifiedTypeName name="com.google.android.gms.maps.GoogleMap.OnMapClickListener"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.MapActivity.markerType"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.MapActivity.MARKERTYPE"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.R.layout"/>
+<fullyQualifiedTypeName name="android.support.v4.widget.SimpleCursorAdapter"/>
+<fullyQualifiedTypeName name="android.support.v4.widget.CursorAdapter"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.R.id"/>
+<fullyQualifiedTypeName name="edu.mines.alterego.R.menu"/>
+</qualifiedTypeNameHistroy>

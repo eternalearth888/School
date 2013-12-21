@@ -49,14 +49,20 @@ public class SummaryActivity extends Activity implements OnClickListener {
 		String p1score = intent.getStringExtra(MainActivity.p1_score);
 		String p2score = intent.getStringExtra(MainActivity.p2_score);
 		String p3score = intent.getStringExtra(MainActivity.p3_score);
+		String p4score = intent.getStringExtra(MainActivity.p4_score);
+		String p5score = intent.getStringExtra(MainActivity.p5_score);
 		
 		TextView final_p1_score = (TextView)findViewById(R.id.player_1_score);
 		TextView final_p2_score = (TextView)findViewById(R.id.player_2_score);
 		TextView final_p3_score = (TextView)findViewById(R.id.player_3_score);
+		TextView final_p4_score = (TextView)findViewById(R.id.player_4_score);
+		TextView final_p5_score = (TextView)findViewById(R.id.player_5_score);
 		
 		final_p1_score.setText(p1score);
 		final_p2_score.setText(p2score);
 		final_p3_score.setText(p3score);
+		final_p4_score.setText(p4score);
+		final_p5_score.setText(p5score);
 	}
 
 	/**

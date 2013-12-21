@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!-- App Name -->
+    <string name="app_name">AlterEgo</string>
+    
+    <!-- Flip Pages: Titles -->
+    <string name="title_section3">Section 3</string>
+    <string name="title_inventory">Inventory</string>
+    <string name="title_character">Character</string>
+    
+     <!-- Database ID -->
+    <string name="gameid">GAMEID</string>
+    <string name="charid">CHARID</string>
+    
+     <!-- Dialog Options -->
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+
+    
+    <!-- Main Activity Strings -->
+    <string name="main_List_view">View Inventory</string>
+    <string name="main_new_game">Create New Game</string>
+    
+     <!-- Basic Menu Options -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    
+    <!-- Main Menu Extra Options -->
+    <string name="action_new_game">Create New Game</string>
+</resources>

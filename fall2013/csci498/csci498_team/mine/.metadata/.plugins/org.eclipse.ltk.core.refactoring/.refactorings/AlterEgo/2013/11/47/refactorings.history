@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AlterEgo/res/layout/create_new_marker_dialogue.xml&apos; to &apos;new_marker_dialog.xml&apos;" description="Rename resource &apos;create_new_marker_dialogue.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/create_new_marker_dialogue.xml" name="new_marker_dialog.xml" stamp="1385250804353" updateReferences="true"/>
+</session>

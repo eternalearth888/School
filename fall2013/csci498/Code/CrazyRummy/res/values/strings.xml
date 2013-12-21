@@ -25,6 +25,20 @@
     <string name="add_10_p3">+10</string>
     <string name="add_ace_p3">+Ace</string>
     
+      <!-- Player 4 -->
+    <string name="player_4">Player 4</string>
+    <string name="player_4_score">0</string>
+    <string name="add_5_p4">+5</string>
+    <string name="add_10_p4">+10</string>
+    <string name="add_ace_p4">+Ace</string>
+    
+      <!-- Player 5 -->
+    <string name="player_5">Player 5</string>
+    <string name="player_5_score">0</string>
+    <string name="add_5_p5">+5</string>
+    <string name="add_10_p5">+10</string>
+    <string name="add_ace_p5">+Ace</string>
+    
     <!-- Finish -->
     <string name="reset_game">RESET</string>
     <string name="finish_game">FINISH</string>

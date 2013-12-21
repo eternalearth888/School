@@ -5,4 +5,9 @@
 <fullyQualifiedTypeName name="com.example.crazyrummy.R.layout"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="com.example.crazyrummy.R.id"/>
+<fullyQualifiedTypeName name="android.net.NetworkInfo"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.renderscript.Element"/>
+<fullyQualifiedTypeName name="org.w3c.dom.Element"/>
+<fullyQualifiedTypeName name="edu.mines.mdeslis_nhetrick_weatherrss.DownloadDocumentTask.Listener"/>
 </qualifiedTypeNameHistroy>

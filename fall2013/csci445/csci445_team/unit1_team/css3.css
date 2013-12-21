@@ -1,0 +1,105 @@
+body {
+	background: url('images/left.png') left top no-repeat, url('images/right.png') right top no-repeat, url('images/background.jpg') center top repeat-x;
+	background-color: #C8FC3C;
+	font-family: Verdana, sans-serif;
+}
+
+/** Custom Font, MoonStar **/
+@font-face
+{
+	font-family: moonFont;
+	src: url(font/Moonstar.ttf);
+}
+
+header {
+	font-family: moonFont;
+	font-size: 50px;
+	text-align: center;
+	color: rgba(54,25,25,1.0);
+	text-shadow: 2px 2px 5px #788A47;
+}
+
+footer {
+	text-align: center;
+}
+
+#tetris {
+	margin: auto;
+	width: 700px;
+	height: 750px;
+	background: rgba(54,25,25,.85);
+	border-radius: 2em;
+}
+
+section, aside {
+	padding: 1em;
+}
+
+section {
+	margin-left: 1em;
+	float: left;
+	width: 350px;
+}
+
+#screen{
+	width: 350px; 
+	height: 700px;
+}
+
+aside {
+	margin-right: 1em;
+	float: right;
+	width: 250px;
+	float: right;
+}
+
+#next {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 1em;
+	background-color: #FFFFFF;
+}
+
+#controls {
+	margin: auto;
+	width: 200px;
+}
+
+#newGame {
+	width: 100px;
+	margin-left: 3.5em;
+}
+
+
+p.score {
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+}
+
+p.rules, p.tips {
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+}
+
+ul {
+	color: #FFFFFF;
+	font-size:14px;
+	
+}
+
+/**
+#moon {
+	text-align:center;
+}
+
+.rotateY {
+	pointer-events: none;
+	-moz-transform: none;
+	-moz-perspective: 175px;
+	-moz-transform-style: preserve-3d;
+ 	-moz-transition: all 0.5s ease-in-out;
+	-moz-transform: rotateY(180deg);
+}**/

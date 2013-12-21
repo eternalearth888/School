@@ -24,20 +24,26 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001b;
+        public static final int action_settings=0x7f080025;
         public static final int add_10_p1=0x7f08000b;
         public static final int add_10_p2=0x7f080010;
         public static final int add_10_p3=0x7f080015;
+        public static final int add_10_p4=0x7f08001a;
+        public static final int add_10_p5=0x7f08001f;
         public static final int add_5_p1=0x7f08000a;
         public static final int add_5_p2=0x7f08000f;
         public static final int add_5_p3=0x7f080014;
+        public static final int add_5_p4=0x7f080019;
+        public static final int add_5_p5=0x7f08001e;
         public static final int add_ace_p1=0x7f08000c;
         public static final int add_ace_p2=0x7f080011;
         public static final int add_ace_p3=0x7f080016;
-        public static final int end_game=0x7f08001a;
-        public static final int finish_game=0x7f080018;
+        public static final int add_ace_p4=0x7f08001b;
+        public static final int add_ace_p5=0x7f080020;
+        public static final int end_game=0x7f080024;
+        public static final int finish_game=0x7f080022;
         public static final int new_end_layout=0x7f080007;
-        public static final int new_game=0x7f080019;
+        public static final int new_game=0x7f080023;
         public static final int player_1=0x7f080008;
         public static final int player_1_final_layout=0x7f080004;
         public static final int player_1_layout=0x7f080000;
@@ -50,8 +56,12 @@ public final class R {
         public static final int player_3__final_layout=0x7f080006;
         public static final int player_3_layout=0x7f080002;
         public static final int player_3_score=0x7f080013;
+        public static final int player_4=0x7f080017;
+        public static final int player_4_score=0x7f080018;
+        public static final int player_5=0x7f08001c;
+        public static final int player_5_score=0x7f08001d;
         public static final int reset_finish_layout=0x7f080003;
-        public static final int reset_game=0x7f080017;
+        public static final int reset_game=0x7f080021;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -62,8 +72,12 @@ public final class R {
         public static final int player_2_final=0x7f030005;
         public static final int player_3=0x7f030006;
         public static final int player_3_final=0x7f030007;
-        public static final int reset_finish=0x7f030008;
-        public static final int summary_buttons=0x7f030009;
+        public static final int player_4=0x7f030008;
+        public static final int player_4_final=0x7f030009;
+        public static final int player_5=0x7f03000a;
+        public static final int player_5_final=0x7f03000b;
+        public static final int reset_finish=0x7f03000c;
+        public static final int summary_buttons=0x7f03000d;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -73,18 +87,24 @@ public final class R {
         public static final int add_10_p1=0x7f050005;
         public static final int add_10_p2=0x7f05000a;
         public static final int add_10_p3=0x7f05000f;
+        public static final int add_10_p4=0x7f050014;
+        public static final int add_10_p5=0x7f050019;
         public static final int add_5_p1=0x7f050004;
         public static final int add_5_p2=0x7f050009;
         public static final int add_5_p3=0x7f05000e;
+        public static final int add_5_p4=0x7f050013;
+        public static final int add_5_p5=0x7f050018;
         public static final int add_ace_p1=0x7f050006;
         public static final int add_ace_p2=0x7f05000b;
         public static final int add_ace_p3=0x7f050010;
+        public static final int add_ace_p4=0x7f050015;
+        public static final int add_ace_p5=0x7f05001a;
         public static final int app_name=0x7f050000;
-        public static final int end_game=0x7f050014;
-        public static final int finish_game=0x7f050012;
+        public static final int end_game=0x7f05001e;
+        public static final int finish_game=0x7f05001c;
         /**  Summary 
          */
-        public static final int new_game=0x7f050013;
+        public static final int new_game=0x7f05001d;
         /**  Player 1 
          */
         public static final int player_1=0x7f050002;
@@ -97,9 +117,17 @@ public final class R {
          */
         public static final int player_3=0x7f05000c;
         public static final int player_3_score=0x7f05000d;
+        /**  Player 4 
+         */
+        public static final int player_4=0x7f050011;
+        public static final int player_4_score=0x7f050012;
+        /**  Player 5 
+         */
+        public static final int player_5=0x7f050016;
+        public static final int player_5_score=0x7f050017;
         /**  Finish 
          */
-        public static final int reset_game=0x7f050011;
+        public static final int reset_game=0x7f05001b;
     }
     public static final class style {
         /** 
